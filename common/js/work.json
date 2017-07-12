@@ -1,0 +1,24 @@
+[
+  {
+    'project' : 'Bee Window',
+    'role' : 'HTML, CSS',
+    'display' : 'common/img/beewindow-display.png',
+    'gallery' : {
+                  'desktop' : 'common/img/gallery/beewindow/desktop-home.jpg',
+                  'tablet' : 'common/img/gallery/beewindow/ipad-home.jpg', 
+                  'phone' : 'common/img/gallery/beewindow/mobile-home.jpg'
+                },
+    'url' : 'www.windowsbybee.com'    
+  },
+  {
+    'project' : '',
+    'role' : '',
+    'display' : '',
+    'gallery' : {
+                  'desktop' : 'common/img/gallery/.jpg',
+                  'tablet' : 'common/img/gallery/.jpg', 
+                  'phone' : 'common/img/gallery/.jpg'
+                },
+    'url' : ''    
+  },
+]
