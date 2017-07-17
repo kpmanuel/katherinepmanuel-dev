@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+html {  
+  font-size:16px;
+}
+
+body {
+  font-family:'Roboto', sans-serif;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.button {  
+  -webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	transition:all 0.4s;
+}
+
+.button-primary,
+.button-primary:visited {
+  text-decoration:none !important;
+  border:1px solid #ff7800;
+  color:#FFF;  
+  width:100px;
+  /*background:#ffa700;*/
+  
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa700+0,ff7800+100 */
+  background: #ffa700; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffa700 0%, #ff7800 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffa700 0%,#ff7800 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffa700 0%,#ff7800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa700', endColorstr='#ff7800',GradientType=0 ); /* IE6-9 */
+}
+
+.button-primary:hover
+{
+  text-decoration:none;
+  color:#FFF;
+  width:140px;
+}
+
+header {
+  /*background-color:#24A9A7;*/
+  background-color:rgba(36,169,167,0.9);
+  font-size:1rem;
+  width:100%;  
+  display:block;
+  /*position:fixed;
+  z-index:99999999999;*/
+}
+
+@media screen and (min-width:576px)
+{
+  header {
+    font-size:1rem;
+  }
+}
+
+.branding h1.name
+{
+  color:#FFF;
+  /*font-family: 'Crimson Text', serif;*/
+  font-family: 'Architects Daughter', cursive;
+  /*margin-bottom:0;*/
+  margin-top:0;
+  margin-bottom:0;
+  text-align:center;
+  font-size:2.25em;
+	text-transform:uppercase;
+}
+
+@media screen and (min-width:992px)
+{
+  .branding h1.name {
+    text-align:left;
+  }
+}
+
+.branding .slogan
+{
+  color:#005352;
+  display:block;
+  font-size:1.5em;
+  text-align:center;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+@media screen and (min-width:992px)
+{
+  .branding .slogan {
+    text-align:left;
+  }
+}
+
+nav {
+  text-align:center;
+  margin-top:20px;
+}
+
+@media screen and (min-width:992px) 
+{
+  nav {
+    text-align:right;
+    margin-top:0;
+  }
+}
+
+ul.menu {
+  margin:0;
+  padding:0;
+  font-size:1.25em;
+}
+
+.menu li {
+  display:inline-block;
+}
+
+.menu a:link,
+.menu a:visited {
+  color:#FFF;
+  padding:5px 10px;
+  display:block;
+  text-decoration:none;
+  border-radius:5px;
+  
+  -webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	transition:all 0.4s;
+}
+
+.menu a:hover {
+  background:#008684;
+}
+
+.main-container {
+  display:block;
+  position:relative;
+  /*top:95px;*/
+}
+
+.projects {
+  background:url('../img/projects-bg.jpg') no-repeat center center;
+  background-size:cover;
+  padding-top:1em;
+  padding-bottom:2em;
+}
+
+.section-title {
+  text-align:left;
+  /*color:#24A9A7;*/
+  color:#191617;
+  font-weight:bold;
+  font-size:1.75rem;
+  font-family:'Architects Daughter', cursive;
+  text-transform:uppercase;
+}
+
+.about .section-title {
+  color:#24A9A7; 
+}
+
+.contact .section-title {
+  color:#FFF; 
+  text-align:center;
+}
+
+.subsection-title
+{
+  text-align:left;
+  color:#888;
+  font-weight:bold;
+  font-size:1.5rem;
+}
+
+.projects {
+	padding:2em 0;
+}
+
+.projects .project
+{
+  text-align:center;
+}
+
+.project .project-name
+{
+  color:#24A9A7;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+.about {
+  background-color:#E7E7E7;
+	padding:3em 0;
+}
+
+.skill .type {
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.skill .range {
+	background:#999;
+	border:1px solid #999;
+	width:100%;
+	float:none;
+	clear:both;
+}
+
+.skill .level {
+	/*background:#49fff4;*/
+	background:#ffd076;
+	width:90%;
+}
+
+.skill .range-labels {
+	font-size:0.75rem;
+	color:#666;
+}
+
+.skill .range-labels .beginner {
+	float:left;
+}
+
+.skill .range-labels .advanced {
+	float:right;
+}
+
+.education .history {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.education .history .date {
+	color:#999;
+	font-weight:bold;
+}
+
+.education .history .location {
+	font-weight:bold;
+}
+
+.education .history .degree {
+	font-style:italic;
+}
+
+.contact {
+  background-color:#FFA700;
+	padding:4em 0;
+}
+
+.contact .contact-links {
+	width:100%;
+	max-width:280px;
+	margin:auto;
+}
+
+.contact .contact-links .icon {
+	font-size:1.5em;
+	vertical-align:middle;
+}
+
+.contact a {
+	display:block;
+	font-weight:bold;
+	text-decoration:none;	
+	-webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	transition:all 0.4s;
+}
+
+.contact a:active,
+.contact a:link,
+.contact a:visited {
+	display:block;
+	padding:10px;
+	font-weight:bold;
+	color:#FFF;	
+}
+
+.contact a:hover {
+	border-radius:5px;
+	background:#ff8100;
+  text-decoration:none;
+}
+
+.quote {
+  padding:3em 0;
+}
+
+.container {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+@media screen and (min-width:576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+footer {
+  background-color:#24A9A7;
+	padding:2.25em 0;
+}
+
+footer .container {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+footer .copyright {
+	color:#FFF;
+}
+
+
