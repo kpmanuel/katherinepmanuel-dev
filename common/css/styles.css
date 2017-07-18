@@ -47,7 +47,7 @@ body {
 header {
   /*background-color:#24A9A7;*/
   background-color:rgba(36,169,167,0.9);
-  font-size:1rem;
+  font-size:0.875rem;
   width:100%;  
   display:block;
   /*position:fixed;
@@ -190,7 +190,7 @@ ul.menu {
 .project .project-name
 {
   color:#24A9A7;
-  text-transform:uppercase;
+  
   font-weight:bold;
 }
 

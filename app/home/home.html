@@ -1,0 +1,79 @@
+<div class="main-container">
+  <div class="projects">       
+    <div class="container">              
+      <div class="slick-container">
+        <div class="project">
+          <img class="img-responsive display" ng-src="{{ projects[1].display }}">                  
+          <h3 class="project-name" ng-bind="projects[1].name"></h3>
+          <p class="project-role">
+            <strong>MY ROLE: </strong><span ng-bind="projects[1].role"></span>
+          </p>
+          <div class="project-links">
+            <a ng-href="{{ projects[1].url }}" target="_blank" class="button button-primary">View Site</a>
+          </div>
+        </div>
+      </div><!-- end .slick-container -->
+    </div>            
+  </div><!-- end .projects -->
+
+  <div class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="grid-row">
+        <div class="grid-col-md-6 skills">
+          <h3 class="subsection-title"><i class="icon icon-tools"></i> skills</h3>                  
+
+          <div class="grid-row skill" ng-repeat="skill in skills">
+            <div class="grid-col-sm-4 no-padding">
+              <br ng-show="$first"><span class="type" ng-bind="skill.type"></span>
+            </div>                    
+            <div class="grid-col-sm-8 no-padding">
+              <div class="range-labels" ng-show="$first">
+                <span class="beginner">beginner</span>
+                <span class="advanced">advanced</span>
+              </div>
+              <div class="range">
+                <div class="level" style="width:{{ skill.level }}%">&nbsp;</div>
+              </div>                      
+            </div>
+          </div><!-- end .skill -->
+        </div><!-- end .skills-container -->
+        
+        <div class="grid-col-md-6 education">
+          <h3 class="subsection-title"><i class="icon icon-graduation-cap"></i> education</h3>
+
+          <div class="history" ng-repeat="history in education">
+            <span class="date" ng-bind="history.date">May 2014</span>
+            <br><span class="location" ng-bind="history.location">Indiana University (Indianapolis, IN)</span>
+            <br><span class="school" ng-bind="history.school">School of Informatics and Computing</span>
+            <br><span class="degree" ng-bind="history.degree">Master of Science in Human-Computer Interaction</span>
+          </div>
+        </div>
+      </div><!-- end .grid-row -->
+    </div>
+  </div><!-- end .about -->
+
+  <div class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact-links">               
+        <a href="#">
+          <i class="icon icon-linkedin-circled"></i><span>linkedin.com/in/kpmanuel</span>
+        </a>
+        <a href="#">
+          <i class="icon icon-mail-circled"></i><span>geminipinai@yahoo.com</span>
+        </a>
+      </div>
+    </div>
+  </div><!-- end .contact -->
+
+  <div class="quote">
+    <div class="container">
+      <span><span>UI</span> is the <span>saddle</span>, the <span>stirrups</span>, and the <span>reigns</span>.
+      <span>UX</span> is the  feeling you get being able to <span>ride the horse</span>, and <span>rope your cattle</span>.</span>          
+      <p class="author center">Dain Miller</p>
+    </div>
+  </div><!-- end .quote -->
+</div><!-- end .main-container -->

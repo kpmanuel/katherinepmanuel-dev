@@ -1,1 +1,42 @@
-/* testing file 3 */
+[
+  {
+    "type" : "HTML",
+    "level" : "90"
+  },
+  {
+    "type" : "CSS",
+    "level" : "90"
+  },
+  {
+    "type" : "JavaScript",
+    "level" : "80"
+  },
+  {
+    "type" : "jQuery",
+    "level" : "80"
+  },
+  {
+    "type" : "Bootstrap",
+    "level" : "70"
+  },
+  {
+    "type" : "PHP",
+    "level" : "60"
+  },
+  {
+    "type" : "MySQL",
+    "level" : "60"
+  },
+  {
+    "type" : "Balsamiq",
+    "level" : "90"
+  },
+  {
+    "type" : "Photoshop",
+    "level" : "90"
+  },
+  {
+    "type" : "Illustrator",
+    "level" : "80"
+  }
+]

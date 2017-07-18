@@ -1,0 +1,20 @@
+[
+  {
+    "date" : "May 2014",
+    "location" : "Indiana University (Indianapolis, IN)",
+    "school" : "School of Informatics and Computing",
+    "degree" : "Master of Science in Human-Computer Interaction"
+  },
+  {
+    "date" : "December 2010",
+    "location" : "Purdue University (Indianapolis, IN)",
+    "school" : "School of Science",
+    "degree" : "Certificate in Applied Computer Science"
+  }, 
+  {
+    "date" : "December 2008",
+    "location" : "Indiana University (Indianapolis, IN)",
+    "school" : "School of Informatics",
+    "degree" : "Bachelor of Science in Media Arts & Science"
+  }
+]
