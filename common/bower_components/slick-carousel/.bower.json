@@ -1,12 +1,11 @@
 {
   "name": "slick-carousel",
   "main": [
-    "slick/slick.min.js",
+    "slick/slick.js",
     "slick/slick.css",
-    "slick/slick-theme.css",
-    "slick/fonts/*"
+    "slick/slick.less",
+    "slick/slick.scss"
   ],
-  "version": "1.4.1",
   "homepage": "https://github.com/kenwheeler/slick",
   "authors": [
     "Ken Wheeler <ken_wheeler@me.com>"
@@ -24,18 +23,20 @@
     "bower_components",
     "test",
     "tests",
+    "package.json",
     "index.html"
   ],
   "dependencies": {
     "jquery": ">=1.7"
   },
-  "_release": "1.4.1",
+  "_release": "b0622cce71",
   "_resolution": {
-    "type": "version",
-    "tag": "1.4.1",
-    "commit": "e3fc23908d647bb2471c00c316ad57b15667975d"
+    "type": "branch",
+    "branch": "master",
+    "commit": "b0622cce712a01790b59970994cc63a3eee3560c"
   },
   "_source": "https://github.com/kenwheeler/slick.git",
-  "_target": "~1.4.1",
-  "_originalSource": "slick-carousel"
+  "_target": "master",
+  "_originalSource": "slick-carousel",
+  "_direct": true
 }

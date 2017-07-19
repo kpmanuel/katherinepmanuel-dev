@@ -163,6 +163,13 @@ ul.menu {
 
 .about .section-title {
   color:#24A9A7; 
+	text-align:center;
+}
+
+@media screen and (min-width:992px) {
+	.about .section-title {
+		text-align:left;
+	}
 }
 
 .contact .section-title {
@@ -291,6 +298,27 @@ ul.menu {
 
 .quote {
   padding:3em 0;
+	text-align:center;
+	font-size:1.25em;
+	color:#999;
+}
+
+.quote .text-large {
+	font-size:3rem;
+}
+
+.quote .text-medium {
+	font-size:2rem;
+}
+
+.quote .text-color {
+	color:#24A9A7;
+}
+
+.quote .author {
+	text-transform: uppercase;
+	font-size:1rem;
+	margin-top:1em;
 }
 
 .container {
@@ -337,5 +365,4 @@ footer .container {
 footer .copyright {
 	color:#FFF;
 }
-
 

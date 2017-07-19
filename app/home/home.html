@@ -1,17 +1,23 @@
 <div class="main-container">
   <div class="projects">       
     <div class="container">              
-      <div class="slick-container">
-        <div class="project">
-          <img class="img-responsive display" ng-src="{{ projects[1].display }}">                  
-          <h3 class="project-name" ng-bind="projects[1].name"></h3>
-          <p class="project-role">
-            <strong>MY ROLE: </strong><span ng-bind="projects[1].role"></span>
-          </p>
-          <div class="project-links">
-            <a ng-href="{{ projects[1].url }}" target="_blank" class="button button-primary">View Site</a>
+      <div class="slick-slider-container">
+        <slick init-onload="true" data="projects" fade="false" dots="true" prev-arrow=".arrow-left" next-arrow=".arrow-right" infinite="true" speed="500" slides-to-show="1" slides-to-scroll="1">
+          <div class="project" ng-repeat="project in projects">
+            <a ng-click="openLightboxModal($index)">
+              <img class="img-responsive display" ng-src="{{ project.display }}">
+            </a>
+            <h3 class="project-name" ng-bind="project.name"></h3>
+            <p class="project-role">
+              <strong>MY ROLE: </strong><span ng-bind="project.role"></span>
+            </p>
+            <div class="project-links">
+              <a ng-href="{{ project.website }}" target="_blank" class="button button-primary">View Site</a>
+            </div>
           </div>
-        </div>
+        </slick>        
+        <div class="arrow arrow-left"><i class="icon icon-left-open-big"></i></div>
+        <div class="arrow arrow-right"><i class="icon icon-right-open-big"></i></div>
       </div><!-- end .slick-container -->
     </div>            
   </div><!-- end .projects -->
@@ -25,10 +31,10 @@
           <h3 class="subsection-title"><i class="icon icon-tools"></i> skills</h3>                  
 
           <div class="grid-row skill" ng-repeat="skill in skills">
-            <div class="grid-col-sm-4 no-padding">
+            <div class="grid-col-sm-4">
               <br ng-show="$first"><span class="type" ng-bind="skill.type"></span>
             </div>                    
-            <div class="grid-col-sm-8 no-padding">
+            <div class="grid-col-sm-8">
               <div class="range-labels" ng-show="$first">
                 <span class="beginner">beginner</span>
                 <span class="advanced">advanced</span>
@@ -71,9 +77,9 @@
 
   <div class="quote">
     <div class="container">
-      <span><span>UI</span> is the <span>saddle</span>, the <span>stirrups</span>, and the <span>reigns</span>.
-      <span>UX</span> is the  feeling you get being able to <span>ride the horse</span>, and <span>rope your cattle</span>.</span>          
-      <p class="author center">Dain Miller</p>
+      <span><span class="text-color text-large">UI</span> is the <span class="text-medium">saddle</span>, the <span class="text-medium">stirrups</span>, and the <span class="text-medium">reigns</span>.
+      <span class="text-color text-large">UX</span> is the  feeling you get being able to <span class="text-medium">ride the horse</span>, and <span class="text-medium">rope your cattle</span>.</span>          
+      <p class="author">Dain Miller</p>
     </div>
   </div><!-- end .quote -->
 </div><!-- end .main-container -->

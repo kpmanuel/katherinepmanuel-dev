@@ -3,6 +3,14 @@
 .icon-home:before { content: '\e801'; } /* '' */
 .icon-tools:before { content: '\e802'; } /* '' */
 .icon-mail-circled:before { content: '\e803'; } /* '' */
+.icon-up-open:before { content: '\e804'; } /* '' */
+.icon-right-open:before { content: '\e805'; } /* '' */
+.icon-left-open:before { content: '\e806'; } /* '' */
+.icon-down-open:before { content: '\e807'; } /* '' */
+.icon-left-open-big:before { content: '\e808'; } /* '' */
+.icon-right-open-big:before { content: '\e809'; } /* '' */
+.icon-up-open-big:before { content: '\e80a'; } /* '' */
+.icon-down-open-big:before { content: '\e80b'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-quote-left:before { content: '\f10d'; } /* '' */
 .icon-quote-right:before { content: '\f10e'; } /* '' */

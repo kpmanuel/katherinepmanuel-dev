@@ -1,0 +1,50 @@
+.slick-slide {
+  outline:none;
+}
+
+.slick-slide a {
+  outline:none;
+}
+
+/* custom slick arrows */
+.slick-slider-container
+{
+    margin:0 auto;
+    position:relative;
+}
+
+@media screen and (min-width:768px)
+{
+    .slick-slider-container
+    {
+        padding-left:60px;
+        padding-right:60px;
+    }
+}
+
+.slick-slider-container .arrow {
+    position:absolute;
+    top:0;
+    height:100%;
+    align-items:center;
+    display:flex;
+    visibility:hidden;
+    cursor:pointer;
+    font-size:3em;
+    color:#24A9A7;
+}
+
+@media screen and (min-width:768px)
+{
+  .slick-slider-container .arrow {
+        visibility:visible;
+    }
+}
+
+.slick-slider-container .arrow-left {
+    left:0;
+}
+
+.slick-slider-container .arrow-right {
+    right:0;
+}

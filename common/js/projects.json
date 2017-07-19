@@ -6,16 +6,16 @@
     "display" : "common/img/beewindow/beewindow-display.png",
     "gallery" : [
                   {
-                    "image" : "common/img/beewindow/desktop-home.jpg"
+                    "url" : "common/img/beewindow/desktop-home.jpg"
                   },
                   {
-                    "image" : "common/img/beewindow/ipad-home.jpg"
+                    "url" : "common/img/beewindow/ipad-home.jpg"
                   },
                   {
-                    "image" : "common/img/beewindow/mobile-home.jpg"
+                    "url" : "common/img/beewindow/mobile-home.jpg"
                   }
                 ],
-    "url" : "http://www.windowsbybee.com"    
+    "website" : "http://www.windowsbybee.com"    
   },
   {
     "id" : "1",
@@ -24,16 +24,16 @@
     "display" : "common/img/bookshelf/bookshelf-display.png",
     "gallery" : [
                   {
-                    "image" : "common/img/bookshelf/desktop-home.jpg"
+                    "url" : "common/img/bookshelf/desktop-home.jpg"
                   },
                   {
-                    "image" : "common/img/bookshelf/ipad-home.jpg"
+                    "url" : "common/img/bookshelf/ipad-home.jpg"
                   },
                   {
-                    "image" : "common/img/bookshelf/mobile-home.jpg"
+                    "url" : "common/img/bookshelf/mobile-home.jpg"
                   }
                 ],
-    "url" : "http://digital.indystar.com/bookshelf"    
+    "website" : "http://digital.indystar.com/bookshelf"    
   },
   {
     "id" : "2",
@@ -42,16 +42,16 @@
     "display" : "common/img/fineryears/fineryears-display.png",
     "gallery" : [
                   {
-                    "image" : "common/img/fineryears/desktop-home.jpg"
+                    "url" : "common/img/fineryears/desktop-home.jpg"
                   },
                   {
-                    "image" : "common/img/fineryears/ipad-home.jpg"
+                    "url" : "common/img/fineryears/ipad-home.jpg"
                   },
                   {
-                    "image" : "common/img/fineryears/mobile-home.jpg"
+                    "url" : "common/img/fineryears/mobile-home.jpg"
                   }
                 ],
-    "url" : "http://www.fineryears.com"
+    "website" : "http://www.fineryears.com"
   },
   {
     "id" : "3",
@@ -60,16 +60,16 @@
     "display" : "common/img/indianasportsawards/indianasportsawards-display.png",
     "gallery" : [
                   {
-                    "image" : "common/img/indianasportsawards/desktop-home.jpg"
+                    "url" : "common/img/indianasportsawards/desktop-home.jpg"
                   },
                   {
-                    "image" : "common/img/indianasportsawards/ipad-home.jpg"
+                    "url" : "common/img/indianasportsawards/ipad-home.jpg"
                   },
                   {
-                    "image" : "common/img/indianasportsawards/mobile-home.jpg"
+                    "url" : "common/img/indianasportsawards/mobile-home.jpg"
                   }
                 ],
-    "url" : "http://digital.indystar.com/indianasportsawards"    
+    "website" : "http://digital.indystar.com/indianasportsawards"    
   },
   {
     "id" : "4",
@@ -78,15 +78,15 @@
     "display" : "common/img/marianuniversity/marianuniversity-display.png",
     "gallery" : [
                   {
-                    "image" : "common/img/marianuniversity/desktop-home.jpg"
+                    "url" : "common/img/marianuniversity/desktop-home.jpg"
                   },
                   {
-                    "image" : "common/img/marianuniversity/ipad-home.jpg"
+                    "url" : "common/img/marianuniversity/ipad-home.jpg"
                   },
                   {
-                    "image" : "common/img/marianuniversity/mobile-home.jpg"
+                    "url" : "common/img/marianuniversity/mobile-home.jpg"
                   }
                 ],
-    "url" : "http://digital.indystar.com/marianuniversity/campus"    
+    "website" : "http://digital.indystar.com/marianuniversity/campus"    
   }
 ]
