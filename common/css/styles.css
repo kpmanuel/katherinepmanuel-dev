@@ -21,12 +21,16 @@ body {
 	transition:all 0.4s;
 }
 
+.button-primary {
+	clear:both;
+}
+
 .button-primary,
 .button-primary:visited {
   text-decoration:none !important;
   border:1px solid #ff7800;
-  color:#FFF;  
-  width:100px;
+  color:#FFF !important;
+  width:140px;
   /*background:#ffa700;*/
   
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa700+0,ff7800+100 */
@@ -41,7 +45,14 @@ body {
 {
   text-decoration:none;
   color:#FFF;
-  width:140px;
+}
+
+@media screen and (min-width:576px)
+{
+	.button-primary:hover
+	{
+  	width:160px;
+	}
 }
 
 header {
@@ -144,13 +155,6 @@ ul.menu {
   /*top:95px;*/
 }
 
-.projects {
-  background:url('../img/projects-bg.jpg') no-repeat center center;
-  background-size:cover;
-  padding-top:1em;
-  padding-bottom:2em;
-}
-
 .section-title {
   text-align:left;
   /*color:#24A9A7;*/
@@ -186,7 +190,14 @@ ul.menu {
 }
 
 .projects {
-	padding:2em 0;
+  padding:3em 0;
+}
+
+@media screen and (min-width:768px) {
+	.projects {
+		background:url('../img/projects-bg.jpg') no-repeat center center;
+  	background-size:cover;
+	}
 }
 
 .projects .project

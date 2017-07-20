@@ -3,6 +3,7 @@ angular.module('app.home', [
   //third party
   'slick',
   'bootstrapLightbox',
+  'videosharing-embed',
   
   //services
   'ProjectsService',
@@ -30,7 +31,12 @@ angular.module('app.home', [
   });
   
   //open lightbox
-  $scope.openLightboxModal = function(index) {
+  $scope.openGalleryModal = function(index) {
     Lightbox.openModal($scope.projects[index].gallery, 0);
+  };
+  
+  //open video lightbox
+  $scope.openVideoModal = function(index) {
+    Lightbox.openModal($scope.projects[index].video, 0);
   };
 }]);

@@ -3,19 +3,21 @@
     <div class="container">              
       <div class="slick-slider-container">
         <slick init-onload="true" data="projects" fade="false" dots="true" prev-arrow=".arrow-left" next-arrow=".arrow-right" infinite="true" speed="500" slides-to-show="1" slides-to-scroll="1">
-          <div class="project" ng-repeat="project in projects">
-            <a ng-click="openLightboxModal($index)">
+          <div class="project" ng-repeat="project in projects">            
               <img class="img-responsive display" ng-src="{{ project.display }}">
-            </a>
             <h3 class="project-name" ng-bind="project.name"></h3>
             <p class="project-role">
               <strong>MY ROLE: </strong><span ng-bind="project.role"></span>
             </p>
             <div class="project-links">
-              <a ng-href="{{ project.website }}" target="_blank" class="button button-primary">View Site</a>
-            </div>
-          </div>
-        </slick>        
+              <a ng-show="project.gallery && !project.website && !project.video" ng-click="openGalleryModal($index)" class="button button-primary">View Gallery</a>
+              <a ng-show="project.website" ng-href="{{ project.website }}" target="_blank" class="button button-primary">View Site</a>
+              <a ng-show="project.video" class="button button-primary" ng-click="openVideoModal($index)">Watch Demo</a>
+              <a ng-show="project.report" class="button button-primary" ng-href="{{ project.report }}" target="_blank">Read Research</a>
+            </div>         
+          </div><!-- end .project -->
+        </slick><!-- end slick -->
+        
         <div class="arrow arrow-left"><i class="icon icon-left-open-big"></i></div>
         <div class="arrow arrow-right"><i class="icon icon-right-open-big"></i></div>
       </div><!-- end .slick-container -->
@@ -27,14 +29,14 @@
       <h2 class="section-title">About Me</h2>
 
       <div class="grid-row">
-        <div class="grid-col-md-6 skills">
+        <div class="grid-col-sm-6 skills">
           <h3 class="subsection-title"><i class="icon icon-tools"></i> skills</h3>                  
 
           <div class="grid-row skill" ng-repeat="skill in skills">
-            <div class="grid-col-sm-4">
+            <div class="grid-col-md-4 grid-col-sm-5">
               <br ng-show="$first"><span class="type" ng-bind="skill.type"></span>
             </div>                    
-            <div class="grid-col-sm-8">
+            <div class="grid-col-md-8 grid-col-sm-7">
               <div class="range-labels" ng-show="$first">
                 <span class="beginner">beginner</span>
                 <span class="advanced">advanced</span>
@@ -46,7 +48,7 @@
           </div><!-- end .skill -->
         </div><!-- end .skills-container -->
         
-        <div class="grid-col-md-6 education">
+        <div class="grid-col-sm-6 education">
           <h3 class="subsection-title"><i class="icon icon-graduation-cap"></i> education</h3>
 
           <div class="history" ng-repeat="history in education">

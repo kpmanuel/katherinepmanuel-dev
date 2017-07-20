@@ -1,0 +1,148 @@
+[
+  {
+    "id" : "0",
+    "name" : "The Finer Years",
+    "role" : "Logo design, interface mockups, HTML, CSS, browser tests",
+    "display" : "common/img/fineryears/fineryears-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/fineryears/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/tablet-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/mobile-home.jpg"
+                  }
+                ],
+    "website" : "http://www.fineryears.com"
+  },
+  {
+    "id" : "1",
+    "name" : "Indiana Sports Awards",
+    "role" : "Interface mockups, HTML, CSS, browser tests",
+    "display" : "common/img/indianasportsawards/indianasportsawards-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/indianasportsawards/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/indianasportsawards/tablet-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/indianasportsawards/mobile-home.jpg"
+                  }
+                ],
+    "website" : "http://digital.indystar.com/indianasportsawards"    
+  },
+  {
+    "id" : "2",
+    "name" : "Bookshelf",
+    "role" : "Interface mockups, HTML, CSS, browser tests",
+    "display" : "common/img/bookshelf/bookshelf-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/bookshelf/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/bookshelf/tablet-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/bookshelf/mobile-home.jpg"
+                  }
+                ],
+    "website" : "http://digital.indystar.com/bookshelf"    
+  },
+  {
+    "id" : "3",
+    "name" : "Bee Window",
+    "role" : "HTML, CSS, browser tests",
+    "display" : "common/img/beewindow/beewindow-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/beewindow/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/beewindow/tablet-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/beewindow/mobile-home.jpg"
+                  }
+                ],
+    "website" : "http://www.windowsbybee.com"    
+  },
+  {
+    "id" : "4",
+    "name" : "Marian University",
+    "role" : "HTML, CSS, browser tests",
+    "display" : "common/img/marianuniversity/marianuniversity-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/marianuniversity/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/marianuniversity/tablet-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/marianuniversity/mobile-home.jpg"
+                  }
+                ],
+    "website" : "http://digital.indystar.com/marianuniversity/campus"    
+  },
+  {
+    "id" : "5",
+    "name" : "Minnetrista",
+    "role" : "Wireframes, interface mockups",
+    "display" : "common/img/minnetrista/minnetrista-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/minnetrista/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/minnetrista/mobile-home.jpg"
+                  }
+                ]
+  },
+  {
+    "id" : "6",
+    "name" : "Daida",
+    "role" : "User research, wireframes, interface mockups, cognitive walkthroughs, interactive prototypes, usability tests",
+    "display" : "common/img/daida/daida-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/daida/mobile-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/daida/mobile-stats.jpg"
+                  },
+                  {
+                    "url" : "common/img/daida/mobile-friends.jpg"
+                  }                  
+                ],
+    "video" : [
+                {
+                  "type" : "video",
+                  "url" : "https://www.youtube.com/embed/xo4yFbEnhjM?rel=0&showinfo=0"
+                }
+              ],
+    "report" : "common/docs/daida/daida.pdf"
+  },
+  {
+    "id" : "7",
+    "name" : "SocialQ",
+    "role" : "Wireframes, paper prototypes, internal walkthroughs, interface mockups, interactive prototypes, usability tests",
+    "display" : "common/img/socialq/socialq-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/socialq/mobile-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/socialq/mobile-moods.jpg"
+                  },
+                  {
+                    "url" : "common/img/socialq/mobile-stats.jpg"
+                  }                  
+                ],
+    "report" : "common/docs/socialq/socialq.pdf"
+  }
+]
