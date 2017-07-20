@@ -1,5 +1,8 @@
 /* global angular */
-angular.module('app.header', [])
+angular.module('app.header', [
+  //third party
+  'hl.sticky'
+])
 
 .directive('appHeader', function() {
   return {

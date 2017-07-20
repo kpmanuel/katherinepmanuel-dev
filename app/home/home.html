@@ -1,6 +1,8 @@
 <div class="main-container">
-  <div class="projects">       
-    <div class="container">              
+  <div id="projects" class="projects">       
+    <div class="container">            
+      <h2 class="section-title"><span>Projects</span></h2>
+      
       <div class="slick-slider-container">
         <slick init-onload="true" data="projects" fade="false" dots="true" prev-arrow=".arrow-left" next-arrow=".arrow-right" infinite="true" speed="500" slides-to-show="1" slides-to-scroll="1">
           <div class="project" ng-repeat="project in projects">            
@@ -24,9 +26,9 @@
     </div>            
   </div><!-- end .projects -->
 
-  <div class="about">
+  <div id="about" class="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title"><span>About Me</span></h2>
 
       <div class="grid-row">
         <div class="grid-col-sm-6 skills">
@@ -62,9 +64,9 @@
     </div>
   </div><!-- end .about -->
 
-  <div class="contact">
+  <div id="contact" class="contact">
     <div class="container">
-      <h2 class="section-title">Contact Me</h2>
+      <h2 class="section-title"><span>Contact Me</span></h2>
 
       <div class="contact-links">               
         <a href="#">
@@ -79,9 +81,15 @@
 
   <div class="quote">
     <div class="container">
-      <span><span class="text-color text-large">UI</span> is the <span class="text-medium">saddle</span>, the <span class="text-medium">stirrups</span>, and the <span class="text-medium">reigns</span>.
-      <span class="text-color text-large">UX</span> is the  feeling you get being able to <span class="text-medium">ride the horse</span>, and <span class="text-medium">rope your cattle</span>.</span>          
-      <p class="author">Dain Miller</p>
-    </div>
+      <div class="quote-content">      
+        <span><span class="text-color text-large">UI</span> is the <span class="text-medium">saddle</span>, the <span class="text-medium">stirrups</span>, and the <span class="text-medium">reigns</span>.
+        <span class="text-color text-large">UX</span> is the  feeling you get being able to <span class="text-medium">ride the horse</span>, and <span class="text-medium">rope your cattle</span>.</span>          
+        <p class="author">Dain Miller</p>
+      </div>
+      <div class="quote-bg">
+        <i class="icon icon-quote-left"></i>
+        <i class="icon icon-quote-right"></i>
+      </div>
+    </div>       
   </div><!-- end .quote -->
 </div><!-- end .main-container -->

@@ -8,6 +8,38 @@ html {
 
 body {
   font-family:'Roboto', sans-serif;
+	color:#333;
+}
+
+.container {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+	position:relative;
+}
+
+@media screen and (min-width:576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
@@ -55,21 +87,57 @@ body {
 	}
 }
 
-header {
-  /*background-color:#24A9A7;*/
-  background-color:rgba(36,169,167,0.9);
-  font-size:0.875rem;
-  width:100%;  
-  display:block;
-  /*position:fixed;
-  z-index:99999999999;*/
-}
-
 @media screen and (min-width:576px)
 {
   header {
     font-size:1rem;
   }
+}
+
+@media screen and (min-width:768px)
+{
+  header {
+    font-size:0.875rem;
+  }
+}
+
+header.desktop {
+	background-color:rgba(36,169,167,0.9);
+  font-size:0.875rem;
+  width:100%;  
+  display:none;
+}
+
+@media screen and (min-width:768px) {
+	header.desktop {
+		display:block;
+	}
+}
+
+header.mobile {
+  font-size:0.875rem;
+  width:100%;  
+  display:block;
+}
+
+@media screen and (min-width:768px) {
+	header.mobile {
+		display:none;
+	}
+}
+
+header.mobile .container {
+	max-width:100%;
+	padding:0;
+}
+
+header.mobile .branding {
+	background-color:rgba(36,169,167,0.9);
+	padding-top:20px;
+}
+
+header.mobile .navigation-container {
+	background-color:rgba(36,169,167,0.9);
 }
 
 .branding h1.name
@@ -85,7 +153,7 @@ header {
 	text-transform:uppercase;
 }
 
-@media screen and (min-width:992px)
+@media screen and (min-width:768px)
 {
   .branding h1.name {
     text-align:left;
@@ -102,7 +170,7 @@ header {
   margin-bottom:0;
 }
 
-@media screen and (min-width:992px)
+@media screen and (min-width:768px)
 {
   .branding .slogan {
     text-align:left;
@@ -111,30 +179,37 @@ header {
 
 nav {
   text-align:center;
-  margin-top:20px;
+	background-color:rgba(36,169,167,0.9);
 }
 
-@media screen and (min-width:992px) 
+@media screen and (min-width:768px) 
 {
   nav {
     text-align:right;
     margin-top:0;
+		background-color:transparent;
   }
 }
 
 ul.menu {
   margin:0;
-  padding:0;
+  padding:20px 0;
   font-size:1.25em;
+}
+
+@media screen and (min-width:768px) {
+	ul.menu {
+		padding:0;
+	}
 }
 
 .menu li {
   display:inline-block;
 }
 
-.menu a:link,
-.menu a:visited {
-  color:#FFF;
+.menu span.link {
+	cursor: pointer;
+  color:#FFF !important;
   padding:5px 10px;
   display:block;
   text-decoration:none;
@@ -145,7 +220,7 @@ ul.menu {
 	transition:all 0.4s;
 }
 
-.menu a:hover {
+.menu span.link:hover {
   background:#008684;
 }
 
@@ -163,6 +238,19 @@ ul.menu {
   font-size:1.75rem;
   font-family:'Architects Daughter', cursive;
   text-transform:uppercase;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.section-title span
+{
+	display:inline-block;
+}
+
+.projects .section-title {
+  color:#333; 
+	text-align:center;
 }
 
 .about .section-title {
@@ -170,9 +258,10 @@ ul.menu {
 	text-align:center;
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:768px) {
 	.about .section-title {
 		text-align:left;
+		width:auto;
 	}
 }
 
@@ -310,16 +399,29 @@ ul.menu {
 .quote {
   padding:3em 0;
 	text-align:center;
-	font-size:1.25em;
+	font-size:1rem;
 	color:#999;
+	position:relative;
+}
+
+@media screen and (min-width:576px) {
+	.quote {
+		font-size:1.25rem;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.quote {
+		font-size:1.5rem;
+	}
 }
 
 .quote .text-large {
-	font-size:3rem;
+	font-size:2.5em;
 }
 
 .quote .text-medium {
-	font-size:2rem;
+	font-size:1.5em;
 }
 
 .quote .text-color {
@@ -332,34 +434,41 @@ ul.menu {
 	margin-top:1em;
 }
 
-.container {
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
+.quote-content {
+	position:relative;
+	z-index:9999;
 }
 
-@media screen and (min-width:576px) {
-  .container {
-    max-width: 540px;
-  }
+.quote-bg {
+	z-index:999;
+}
+
+.quote .icon {
+	font-size:4rem;
+	position:absolute;
+	color:#EEE;
 }
 
 @media screen and (min-width:768px) {
-  .container {
-    max-width: 720px;
-  }
+	.quote .icon {
+		font-size:6rem;
+	}
 }
 
 @media screen and (min-width:992px) {
-  .container {
-    max-width: 960px;
-  }
+	.quote .icon {
+		font-size:10rem;
+	}
 }
 
-@media screen and (min-width:1200px) {
-  .container {
-    max-width: 1140px;
-  }
+.icon-quote-left {
+	top:0;
+	left:0;
+}
+
+.icon-quote-right {
+	bottom:0;
+	right:0;
 }
 
 footer {

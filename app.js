@@ -1,7 +1,7 @@
 /* global angular */
 angular.module('app', [
   //third party
-  'ngRoute',
+  'ui.router',
   'slick',
   'ngTouch',
   
@@ -10,22 +10,25 @@ angular.module('app', [
   
   //directives
   'app.header',
-  'app.footer'
+  'app.footer',
+  'app.scrollToElement'
 ])
 
-.config(['$routeProvider', '$locationProvider', '$qProvider', function($routeProvider, $locationProvider, $qProvider) {
-  $routeProvider
-    .when('/home', {
+.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$qProvider', function($stateProvider, $urlRouterProvider, $locationProvider, $qProvider) {
+  $stateProvider
+    .state('home', {
+      url: '/home',
       templateUrl: 'app/home/home.html',
       controller: 'HomeCtrl'
     })
-    .when('/', {
+    .state('default', {
+      url: '/',
       templateUrl: 'app/home/home.html',
       controller: 'HomeCtrl'
     })
-    .otherwise({
-      redirectTo: '/'
-    })
+  
+  $urlRouterProvider
+    .when('', '/')
   
   //Remove the hash-bang (#!) from the URL (e.g. http://kpm.indystardev.com/angularjs/#!/projects)
   //Default to hash (#)
