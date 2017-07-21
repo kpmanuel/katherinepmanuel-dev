@@ -27,11 +27,15 @@ angular.module('app.scrollToElement', [])
         var $sectionTitle = angular.element('.section-title span');        
         $target.find($sectionTitle).addClass('animated infinite tada');
         
-        //remove animation around some time
-        function removeAnimation() {
-          $target.find($sectionTitle).removeClass('animated infinite tada');
-        }
+        //window.$target = $target.find($sectionTitle);
+        
+        //remove animation around some time        
+        var removeAnimation = function() {
+          //console.log('inside func');
+          $target.find($sectionTitle).removeClass();
+        }          
         setTimeout(removeAnimation, 2000);
+        
       });      
     }
   }

@@ -5,7 +5,7 @@ angular.module('app.footer', [])
 .directive('appFooter', function() {
   return {
     restrict: 'E',
-    templateUrl: '/common/js/directives/footer/footer.html',
+    templateUrl: 'common/js/directives/footer/footer.html',
     controller: 'FooterCtrl'
   }
 })
