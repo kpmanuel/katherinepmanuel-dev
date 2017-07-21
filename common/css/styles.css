@@ -402,6 +402,7 @@ ul.menu {
 	font-size:1rem;
 	color:#999;
 	position:relative;
+	font-weight:bold;
 }
 
 @media screen and (min-width:576px) {
@@ -444,14 +445,14 @@ ul.menu {
 }
 
 .quote .icon {
-	font-size:4rem;
+	font-size:3rem;
 	position:absolute;
 	color:#EEE;
 }
 
 @media screen and (min-width:768px) {
 	.quote .icon {
-		font-size:6rem;
+		font-size:5rem;
 	}
 }
 

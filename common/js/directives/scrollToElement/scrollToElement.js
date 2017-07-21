@@ -2,6 +2,8 @@
 
 angular.module('app.scrollToElement', [])
 
+//sample: https://stackoverflow.com/questions/17284005/scrollto-function-in-angularjs
+/* A = attribute */
 .directive('scrollToElement', function() {
   return {
     restrict: 'A',
@@ -21,11 +23,11 @@ angular.module('app.scrollToElement', [])
         //scroll the body
         angular.element("html, body").animate({scrollTop: $target.offset().top - 40}, 1000);
         
-        //shake section title
-        var $sectionTitle = angular.element('.section-title span');
-        
+        //shake section-title
+        var $sectionTitle = angular.element('.section-title span');        
         $target.find($sectionTitle).addClass('animated infinite tada');
         
+        //remove animation around some time
         function removeAnimation() {
           $target.find($sectionTitle).removeClass('animated infinite tada');
         }

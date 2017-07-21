@@ -16,15 +16,15 @@
     "level" : "90"
   },
   {
-    "type" : "JavaScript",
+    "type" : "Bootstrap",
     "level" : "70"
+  },
+  {
+    "type" : "JavaScript",
+    "level" : "50"
   },
   {
     "type" : "jQuery",
-    "level" : "70"
-  },
-  {
-    "type" : "Bootstrap",
-    "level" : "70"
-  }
+    "level" : "50"
+  }  
 ]

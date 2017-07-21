@@ -1,6 +1,7 @@
 /* global angular */
 angular.module('app.footer', [])
 
+/* E = element */
 .directive('appFooter', function() {
   return {
     restrict: 'E',
@@ -10,5 +11,5 @@ angular.module('app.footer', [])
 })
 
 .controller('FooterCtrl', ['$scope', function($scope) {
-
+  $scope.copyrightYear = new Date();
 }]);

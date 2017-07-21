@@ -4,6 +4,7 @@ angular.module('app.header', [
   'hl.sticky'
 ])
 
+/* E = element */
 .directive('appHeader', function() {
   return {
     restrict: 'E',
@@ -13,5 +14,5 @@ angular.module('app.header', [
 })
 
 .controller('HeaderCtrl', ['$scope', function($scope) {
-  //$rootScope.page is defined in the individual page controllers
+
 }]);
