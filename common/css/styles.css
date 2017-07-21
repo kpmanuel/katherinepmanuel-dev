@@ -87,20 +87,6 @@ body {
 	}
 }
 
-@media screen and (min-width:576px)
-{
-  header {
-    font-size:1rem;
-  }
-}
-
-@media screen and (min-width:768px)
-{
-  header {
-    font-size:0.875rem;
-  }
-}
-
 header.desktop {
 	background-color:rgba(36,169,167,0.9);
   font-size:0.875rem;
@@ -133,7 +119,7 @@ header.mobile .container {
 
 header.mobile .branding {
 	background-color:rgba(36,169,167,0.9);
-	padding-top:20px;
+	padding:20px 20px 0 20px;
 }
 
 header.mobile .navigation-container {
@@ -149,7 +135,7 @@ header.mobile .navigation-container {
   margin-top:0;
   margin-bottom:0;
   text-align:center;
-  font-size:2.25em;
+  font-size:2em;
 	text-transform:uppercase;
 }
 
@@ -193,7 +179,7 @@ nav {
 
 ul.menu {
   margin:0;
-  padding:20px 0;
+  padding:15px 0;
   font-size:1.25em;
 }
 
@@ -279,7 +265,7 @@ ul.menu {
 }
 
 .projects {
-  padding:3em 0;
+  padding:2em 0 3em 0;
 }
 
 @media screen and (min-width:768px) {
@@ -303,7 +289,7 @@ ul.menu {
 
 .about {
   background-color:#E7E7E7;
-	padding:3em 0;
+	padding:3em 0 3em 0;
 }
 
 .skill .type {
@@ -358,17 +344,22 @@ ul.menu {
 
 .contact {
   background-color:#FFA700;
-	padding:4em 0;
+	padding:3em 0 4em 0;
 }
 
-.contact .contact-links {
+.contact-content {
 	width:100%;
-	max-width:280px;
+	max-width:260px;
 	margin:auto;
 }
 
-.contact .contact-links .icon {
-	font-size:1.5em;
+.contact .photo {
+	border:1px solid #FFF;	
+	margin:40px 0;
+}
+
+.contact .icon {
+	font-size:1.25em;
 	vertical-align:middle;
 }
 
@@ -397,7 +388,7 @@ ul.menu {
 }
 
 .quote {
-  padding:3em 0;
+  padding:3em 0 3em 0;
 	text-align:center;
 	font-size:1rem;
 	color:#999;

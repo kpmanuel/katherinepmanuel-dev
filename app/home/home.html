@@ -4,7 +4,7 @@
       <h2 class="section-title"><span>Projects</span></h2>
       
       <div class="slick-slider-container">
-        <slick init-onload="true" data="projects" fade="false" dots="true" prev-arrow=".arrow-left" next-arrow=".arrow-right" infinite="true" speed="500" slides-to-show="1" slides-to-scroll="1">
+        <slick data="projects" init-onload="true" autoplay="true" autoplay-speed="5000" speed="1000" fade="true" dots="true" prev-arrow=".arrow-left" next-arrow=".arrow-right" infinite="true">
           <div class="project" ng-repeat="project in projects">            
               <img class="img-responsive display" ng-src="{{ project.display }}">
             <h3 class="project-name" ng-bind="project.name"></h3>
@@ -61,21 +61,33 @@
           </div>
         </div>
       </div><!-- end .grid-row -->
+      
+      <div class="grid-row description">
+        <div class="grid-col-xs-12">
+          <p>Design is my passion. I began as a freelance graphic designer who tripped and fell into the web development world and grew to love designing interactive media. My experience has taught me self-discipline, time management, teamwork, problem solving skills, and most importantly, empathy for other people.<p>
+          <p>I've learned that good design isn't just about making something look awesome. It's more about helping someone accomplish a goal by making their task easier, faster, and more enjoyable. My new dream is to be part of a team that ensures that the direction of innovative technology and digital media never forgets the human element.</p>          
+        </div>
+      </div>
     </div>
   </div><!-- end .about -->
 
   <div id="contact" class="contact">
     <div class="container">
       <h2 class="section-title"><span>Contact Me</span></h2>
-
-      <div class="contact-links">               
-        <a href="http://linkedin.com/in/kpmanuel" target="_blank">
-          <i class="icon icon-linkedin-circled"></i><span>linkedin.com/in/kpmanuel</span>
-        </a>
-        <a href="mailto:geminipinai@yahoo.com">
-          <i class="icon icon-mail-circled"></i><span>geminipinai@yahoo.com</span>
-        </a>
-      </div>
+      
+      <div class="contact-content">
+        <div class="photo">
+          <img src="common/img/kaye.jpg" class="img-responsive" alt="Kaye">
+        </div>
+        <div class="links">
+          <a href="http://linkedin.com/in/kpmanuel" target="_blank">
+            <i class="icon icon-linkedin-circled"></i><span>linkedin.com/in/kpmanuel</span>
+          </a>
+          <a href="mailto:geminipinai@yahoo.com">
+            <i class="icon icon-mail-circled"></i><span>geminipinai@yahoo.com</span>
+          </a>
+        </div>
+      </div><!-- end .contact-content -->      
     </div>
   </div><!-- end .contact -->
 
