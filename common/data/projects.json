@@ -55,24 +55,6 @@
   },
   {
     "id" : "3",
-    "name" : "Bee Window",
-    "role" : "HTML, CSS, browser tests",
-    "display" : "common/img/beewindow/beewindow-display.png",
-    "gallery" : [
-                  {
-                    "url" : "common/img/beewindow/desktop-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/beewindow/tablet-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/beewindow/mobile-home.jpg"
-                  }
-                ],
-    "website" : "http://www.windowsbybee.com"    
-  },
-  {
-    "id" : "4",
     "name" : "Marian University",
     "role" : "HTML, CSS, browser tests",
     "display" : "common/img/marianuniversity/marianuniversity-display.png",
@@ -88,6 +70,23 @@
                   }
                 ],
     "website" : "http://digital.indystar.com/marianuniversity/campus"    
+  },
+  {
+    "id" : "4",
+    "name" : "Kentucky Kingdom",
+    "role" : "Interface mockups, HTML, CSS, browser tests",
+    "display" : "common/img/kentuckykingdom/kentuckykingdom-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/kentuckykingdom/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/kentuckykingdom/tablet-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/kentuckykingdom/mobile-home.jpg"
+                  }
+                ]
   },
   {
     "id" : "5",
