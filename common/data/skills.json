@@ -17,14 +17,14 @@
   },
   {
     "type" : "Bootstrap",
-    "level" : "70"
+    "level" : "60"
   },
   {
     "type" : "JavaScript",
-    "level" : "50"
+    "level" : "40"
   },
   {
     "type" : "jQuery",
-    "level" : "50"
+    "level" : "40"
   }  
 ]
