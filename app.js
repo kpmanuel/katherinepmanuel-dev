@@ -7,6 +7,7 @@ angular.module('app', [
   
   //pages
   'app.home',
+  'app.project',
   
   //directives
   'app.header',
@@ -20,6 +21,11 @@ angular.module('app', [
       url: '/home',
       templateUrl: 'app/home/home.html',
       controller: 'HomeCtrl'
+    })
+    .state('project', {
+      url: '/project',
+      templateUrl: 'app/project/project.html',
+      controller: 'ProjectCtrl'
     })
     .state('default', {
       url: '/',

@@ -19,6 +19,9 @@
     <link href="common/bower_components/slick-carousel/slick/slick-theme.css" rel="stylesheet">
     <link href="common/css/slick-slider.css" rel="stylesheet">
     <link href="common/css/animate.css" rel="stylesheet">
+    
+    <!-- environment variables -->
+    <script src="env.js"></script>
   </head>
   
   <body>    
@@ -49,6 +52,7 @@
   
       <!-- controllers -->
       <script src="app/home/home.js"></script>
+      <script src="app/project/project.js"></script>
     
       <!-- directives -->
       <script src="common/js/directives/header/header.js"></script>
@@ -62,13 +66,16 @@
       
       <!-- Google Analytics tracking code -->
       <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-10647992-1', 'auto');
-        ga('send', 'pageview');
+        //Detect environment using env.js. GA code will only be used if environment is production.
+        if (window.environment == 'production') {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+            ga('create', 'UA-10647992-1', 'auto');
+            ga('send', 'pageview');
+        }
       </script>
   </body>
 </html>
