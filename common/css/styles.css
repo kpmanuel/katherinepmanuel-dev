@@ -11,6 +11,10 @@ body {
 	color:#333;
 }
 
+.bold {
+	font-weight:bold;
+}
+
 .container {
   margin-left:auto;
   margin-right:auto;
@@ -259,6 +263,7 @@ ul.menu {
 .project .project-name
 {
   color:#24A9A7;
+	font-weight:bold;
 }
 
 .about {
