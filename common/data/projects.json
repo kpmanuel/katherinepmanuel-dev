@@ -2,7 +2,7 @@
   {
     "id" : "0",
     "name" : "The Finer Years",
-    "role" : "Interface mockups, HTML, CSS, browser tests",
+    "role" : "Requirements gathering, interface mockups, HTML, CSS, browser tests",
     "display" : "common/img/fineryears/fineryears-display.png",
     "gallery" : [
                   {
@@ -20,7 +20,7 @@
   {
     "id" : "1",
     "name" : "Indiana Sports Awards",
-    "role" : "Interface mockups, HTML, CSS, browser tests",
+    "role" : "Requirements gathering, interface mockups, HTML, CSS, browser tests",
     "display" : "common/img/indianasportsawards/indianasportsawards-display.png",
     "gallery" : [
                   {
@@ -38,7 +38,7 @@
   {
     "id" : "2",
     "name" : "Bookshelf",
-    "role" : "Interface mockups, HTML, CSS, browser tests",
+    "role" : "Requirements gathering, interface mockups, HTML, CSS, browser tests",
     "display" : "common/img/bookshelf/bookshelf-display.png",
     "gallery" : [
                   {
@@ -56,7 +56,7 @@
   {
     "id" : "3",
     "name" : "Marian University",
-    "role" : "HTML, CSS, browser tests",
+    "role" : "Requirements gathering, HTML, CSS, browser tests",
     "display" : "common/img/marianuniversity/marianuniversity-display.png",
     "gallery" : [
                   {
@@ -74,7 +74,7 @@
   {
     "id" : "4",
     "name" : "Kentucky Kingdom",
-    "role" : "Interface mockups, HTML, CSS, browser tests",
+    "role" : "Requirements gathering, interface mockups, HTML, CSS, browser tests",
     "display" : "common/img/kentuckykingdom/kentuckykingdom-display.png",
     "gallery" : [
                   {
@@ -91,7 +91,7 @@
   {
     "id" : "5",
     "name" : "Minnetrista",
-    "role" : "Wireframes, interface mockups",
+    "role" : "Requirements gathering, wireframes, interface mockups",
     "display" : "common/img/minnetrista/minnetrista-display.png",
     "gallery" : [
                   {

@@ -107,6 +107,30 @@
       "css": "down-open",
       "code": 59399,
       "src": "fontawesome"
+    },
+    {
+      "uid": "lnyme20kl7kh26it9yrqk7at10k6i0sf",
+      "css": "award",
+      "code": 59503,
+      "src": "modernpics"
+    },
+    {
+      "uid": "e160a7e42e4e818463fd5a8607b9f608",
+      "css": "down-circle",
+      "code": 59534,
+      "src": "websymbols"
+    },
+    {
+      "uid": "18e30ad120ce4b15d7e5c797e4bf0ee8",
+      "css": "hand-pointer-o",
+      "code": 62042,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bbd66ef66bb8fa9edde54d9a90b89150",
+      "css": "user",
+      "code": 59466,
+      "src": "entypo"
     }
   ]
 }

@@ -1,0 +1,26 @@
+[
+  {
+    "type" : "User Research",
+    "level" : "60"
+  },
+  {
+    "type" : "Research Analysis",
+    "level" : "60"
+  },
+  {
+    "type" : "Wireframes",
+    "level" : "90"
+  },
+  {
+    "type" : "High-Fidelity Mockups",
+    "level" : "90"
+  },
+  {
+    "type" : "Interactive Prototypes",
+    "level" : "80"
+  },
+  {
+    "type" : "Usability Tests",
+    "level" : "70"
+  }
+]

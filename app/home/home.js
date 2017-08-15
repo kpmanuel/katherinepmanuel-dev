@@ -7,21 +7,28 @@ angular.module('app.home', [
   
   //services
   'ProjectsService',
-  'SkillsService',
+  'UISkillsService',
+  'UXSkillsService',
   'EducationService'
 ])
 
-.controller('HomeCtrl', ['$scope', 'ProjectsService', 'SkillsService', 'EducationService', 'Lightbox', function($scope, ProjectsService, SkillsService, EducationService, Lightbox) {
+.controller('HomeCtrl', ['$scope', 'ProjectsService', 'UISkillsService', 'UXSkillsService', 'EducationService', 'Lightbox', function($scope, ProjectsService, UISkillsService, UXSkillsService, EducationService, Lightbox) {
   //get projects
   $scope.projects = [];
   ProjectsService.getProjects().then(function(results) {
     $scope.projects = results.data;
   });
   
-  //get skills
-  $scope.skills = [];
-  SkillsService.getSkills().then(function(results) {
-    $scope.skills = results.data;
+  //get ui skills
+  $scope.uiskills = [];
+  UISkillsService.getSkills().then(function(results) {
+    $scope.uiskills = results.data;
+  });
+  
+  //get ux skills
+  $scope.uxskills = [];
+  UXSkillsService.getSkills().then(function(results) {
+    $scope.uxskills = results.data;
   });
   
   //get education

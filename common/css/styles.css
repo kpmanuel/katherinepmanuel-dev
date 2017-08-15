@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 
@@ -235,34 +235,10 @@ ul.menu {
 }
 
 .projects .section-title {
-  color:#333; 
+  color:#24a9a7; 
 	text-align:center;
 }
 
-.about .section-title {
-  color:#24A9A7; 
-	text-align:center;
-}
-
-@media screen and (min-width:768px) {
-	.about .section-title {
-		text-align:left;
-		width:auto;
-	}
-}
-
-.contact .section-title {
-  color:#FFF; 
-  text-align:center;
-}
-
-.subsection-title
-{
-  text-align:left;
-  color:#888;
-  font-weight:bold;
-  font-size:1.5rem;
-}
 
 .projects {
   padding:2em 0 3em 0;
@@ -283,18 +259,35 @@ ul.menu {
 .project .project-name
 {
   color:#24A9A7;
-  
-  font-weight:bold;
 }
 
 .about {
-  background-color:#E7E7E7;
+  background-color:#E9E9E9;
 	padding:3em 0 3em 0;
+}
+
+.about .section-title {
+  color:#24A9A7; 
+	text-align:center;
+}
+
+@media screen and (min-width:768px) {
+	.about .section-title {
+		text-align:center;
+		width:auto;
+	}
+}
+
+.subsection-title
+{
+  text-align:left;
+  color:#888;
+  font-weight:bold;
+  font-size:1.5rem;
 }
 
 .skill .type {
 	text-transform:uppercase;
-	font-weight:bold;
 }
 
 .skill .range {
@@ -329,22 +322,25 @@ ul.menu {
 	margin-bottom:15px;
 }
 
-.education .history .date {
-	color:#999;
-	font-weight:bold;
-}
-
 .education .history .location {
 	font-weight:bold;
+	color:#666;
 }
 
 .education .history .degree {
 	font-style:italic;
+	font-weight:bold;
+	font-size:1.15rem;
 }
 
 .contact {
   background-color:#FFA700;
 	padding:3em 0 4em 0;
+}
+
+.contact .section-title {
+  color:#007776; 
+  text-align:center;
 }
 
 .contact-content {
@@ -377,7 +373,6 @@ ul.menu {
 .contact a:visited {
 	display:block;
 	padding:10px;
-	font-weight:bold;
 	color:#FFF;	
 }
 
@@ -393,7 +388,6 @@ ul.menu {
 	font-size:1rem;
 	color:#999;
 	position:relative;
-	font-weight:bold;
 }
 
 @media screen and (min-width:576px) {

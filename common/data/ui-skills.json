@@ -7,12 +7,16 @@
     "type" : "Photoshop",
     "level" : "90"
   },
+    {
+    "type" : "InVision",
+    "level" : "50"
+  },
   {
-    "type" : "HTML",
+    "type" : "HTML5",
     "level" : "90"
   },
   {
-    "type" : "CSS",
+    "type" : "CSS3",
     "level" : "90"
   },
   {
