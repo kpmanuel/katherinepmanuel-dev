@@ -7,11 +7,14 @@ angular.module('app', [
   
   //pages
   'app.home',
+  'app.about',
   'app.project',
   
   //directives
   'app.header',
   'app.footer',
+  'app.contact',
+  'app.quote',
   'app.scrollToElement'
 ])
 
@@ -21,6 +24,11 @@ angular.module('app', [
       url: '/home',
       templateUrl: 'app/home/home.html',
       controller: 'HomeCtrl'
+    })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'app/about/about.html',
+      controller: 'AboutCtrl'
     })
     .state('project', {
       url: '/project',

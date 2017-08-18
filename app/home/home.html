@@ -1,16 +1,16 @@
 <div class="main-container">
   <div id="projects" class="projects">       
     <div class="container">            
-      <h2 class="section-title"><span>Projects</span></h2>
+      <!--<h2 class="section-title"><span>Projects</span></h2>-->
       
       <!-- SLICK -->
       <div class="slick-slider-container">
         <slick data="projects" init-onload="true" autoplay="true" autoplay-speed="5000" speed="1000" fade="true" dots="true" prev-arrow=".arrow-left" next-arrow=".arrow-right" infinite="true">
           <div class="project" ng-repeat="project in projects">            
-              <img class="img-responsive display" ng-src="{{ project.display }}">
-            <h3 class="project-name" ng-bind="project.name"></h3>
+            <img class="img-responsive display" ng-src="{{ project.display }}">
+            <h2 class="project-name" ng-bind="project.name"></h2>
             <p class="project-role">
-              <strong>MY ROLE: </strong><span ng-bind="project.role"></span>
+              <strong>My Role: </strong><span ng-bind="project.role"></span>
             </p>
             <div class="project-links">
               <a ng-show="project.gallery && !project.website && !project.video" ng-click="openGalleryModal($index)" class="button button-primary">View Gallery</a>
@@ -26,115 +26,4 @@
       </div><!-- end .slick-container -->
     </div>            
   </div><!-- end .projects -->
-
-  <!-- ABOUT -->
-  <div id="about" class="about">
-    <div class="container">
-      <h2 class="section-title"><span>About Me</span></h2>
-
-      <div class="grid-row">       
-        <!-- UI SKILLS -->
-        <div class="grid-col-sm-5 skills no-padding">
-          <h3 class="subsection-title"><i class="icon icon-tools"></i> UI design skills</h3>                  
-
-          <div class="grid-row skill" ng-repeat="skill in uiskills">
-            <div class="grid-col-md-4 grid-col-sm-5">
-              <br ng-show="$first"><span class="type" ng-bind="skill.type"></span>
-            </div>                    
-            <div class="grid-col-md-8 grid-col-sm-7">
-              <div class="range-labels" ng-show="$first">
-                <span class="beginner">beginner</span>
-                <span class="advanced">advanced</span>
-              </div>
-              <div class="range">
-                <div class="level" style="width:{{ skill.level }}%">&nbsp;</div>
-              </div>                      
-            </div>
-          </div><!-- end .skill -->
-        </div><!-- end .skills -->
-        
-        <div class="grid-col-sm-2 no-padding">
-          &nbsp;
-        </div>
-        
-        <!-- UX SKILLS -->
-        <div class="grid-col-sm-5 skills no-padding">
-          <h3 class="subsection-title"><i class="icon icon-user"></i> UX design skills</h3>                  
-
-          <div class="grid-row skill" ng-repeat="skill in uxskills">
-            <div class="grid-col-md-4 grid-col-sm-5">
-              <br ng-show="$first"><span class="type" ng-bind="skill.type"></span>
-            </div>                    
-            <div class="grid-col-md-8 grid-col-sm-7">
-              <div class="range-labels" ng-show="$first">
-                <span class="beginner">beginner</span>
-                <span class="advanced">advanced</span>
-              </div>
-              <div class="range">
-                <div class="level" style="width:{{ skill.level }}%">&nbsp;</div>
-              </div>                      
-            </div>
-          </div><!-- end .skill -->
-        </div><!-- end .skills -->
-      </div><!-- end .grid-row -->
-        
-      <!-- EDUCATION -->    
-      <div class="grid-row education">
-        <h3 class="subsection-title"><i class="icon icon-graduation-cap"></i> education</h3>
-        <div class="grid-col-sm-4" ng-repeat="history in education">            
-          <div class="history">
-            <span class="degree" ng-bind="history.degree"></span>
-            
-            <br><span class="location" ng-bind="history.location"></span>
-            <br><span class="school" ng-bind="history.school"></span>
-            <br>Graduated: <span class="date" ng-bind="history.date"></span>
-          </div>
-        </div>        
-      </div><!-- end .grid-row -->
-      
-      <div class="grid-row description">
-        <div class="grid-col-xs-12">
-          <p>Design is my passion. I began as a freelance graphic designer who dabbled in web development and grew to love designing interactive media. My experience has taught me self-discipline, time management, teamwork, problem solving skills, and more importantly, empathy for other people.<p>
-          <p>I've learned that good design isn't just about making something look awesome. It's more about helping people accomplish their goals by making their tasks easier, faster, and more enjoyable. I'm proud to be part of a creative community that focuses on user-centered design to ensure that innovative technology and digital media never forgets the human element.</p>          
-          <p><span class="bold">Specialties:</span> Responsive web design (RWD), user interface (UI) design, user experience (UX) design</p>
-        </div>
-      </div>
-    </div>
-  </div><!-- end .about -->
-
-  <!-- CONTACT -->
-  <div id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title"><span>Contact Me</span></h2>
-      
-      <div class="contact-content">
-        <div class="photo">
-          <img src="common/img/kaye.jpg" class="img-responsive" alt="Kaye">
-        </div>
-        <div class="links">
-          <a href="http://linkedin.com/in/kpmanuel" target="_blank">
-            <i class="icon icon-linkedin-circled"></i><span>linkedin.com/in/kpmanuel</span>
-          </a>
-          <a href="mailto:geminipinai@yahoo.com">
-            <i class="icon icon-mail-circled"></i><span>geminipinai@yahoo.com</span>
-          </a>
-        </div>
-      </div><!-- end .contact-content -->      
-    </div>
-  </div><!-- end .contact -->
-
-  <!-- QUOTE -->
-  <div class="quote">
-    <div class="container">
-      <div class="quote-content">      
-        <span><span class="text-color text-large">UI</span> is the <span class="text-medium">saddle</span>, the <span class="text-medium">stirrups</span>, and the <span class="text-medium">reigns</span>.
-        <span class="text-color text-large">UX</span> is the  feeling you get being able to <span class="text-medium">ride the horse</span>, and <span class="text-medium">rope your cattle</span>.</span>          
-        <p class="author">Dain Miller</p>
-      </div>
-      <div class="quote-bg">
-        <i class="icon icon-quote-left"></i>
-        <i class="icon icon-quote-right"></i>
-      </div>
-    </div>       
-  </div><!-- end .quote -->
 </div><!-- end .main-container -->

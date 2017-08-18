@@ -6,35 +6,20 @@ angular.module('app.home', [
   'videosharing-embed',
   
   //services
-  'ProjectsService',
-  'UISkillsService',
-  'UXSkillsService',
-  'EducationService'
+  'ProjectsService'
 ])
 
-.controller('HomeCtrl', ['$scope', 'ProjectsService', 'UISkillsService', 'UXSkillsService', 'EducationService', 'Lightbox', function($scope, ProjectsService, UISkillsService, UXSkillsService, EducationService, Lightbox) {
+.controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$window', 'ProjectsService', 'Lightbox',
+                         function($scope, $rootScope, $location, $window, ProjectsService, Lightbox) {
+  $window.scrollTo(0, 0);
+                           
+  //get page
+  $rootScope.page = $location.path();
+  
   //get projects
   $scope.projects = [];
   ProjectsService.getProjects().then(function(results) {
     $scope.projects = results.data;
-  });
-  
-  //get ui skills
-  $scope.uiskills = [];
-  UISkillsService.getSkills().then(function(results) {
-    $scope.uiskills = results.data;
-  });
-  
-  //get ux skills
-  $scope.uxskills = [];
-  UXSkillsService.getSkills().then(function(results) {
-    $scope.uxskills = results.data;
-  });
-  
-  //get education
-  $scope.education = [];
-  EducationService.getEducation().then(function(results) {
-    $scope.education = results.data;
   });
   
   //open lightbox

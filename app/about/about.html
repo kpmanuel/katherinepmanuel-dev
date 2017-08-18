@@ -1,0 +1,74 @@
+<!-- ABOUT -->
+<div id="about" class="about">
+  <div class="container">
+    <h2 class="section-title"><span>About Me</span></h2>
+
+    <div class="grid-row">       
+      <!-- UI SKILLS -->
+      <div class="grid-col-sm-5 skills no-padding">
+        <h3 class="subsection-title"><i class="icon icon-tools"></i> UI design skills</h3>                  
+
+        <div class="grid-row skill" ng-repeat="skill in uiskills">
+          <div class="grid-col-md-4 grid-col-sm-5">
+            <br ng-show="$first"><span class="type" ng-bind="skill.type"></span>
+          </div>                    
+          <div class="grid-col-md-8 grid-col-sm-7">
+            <div class="range-labels" ng-show="$first">
+              <span class="beginner">beginner</span>
+              <span class="advanced">advanced</span>
+            </div>
+            <div class="range">
+              <div class="level" style="width:{{ skill.level }}%">&nbsp;</div>
+            </div>                      
+          </div>
+        </div><!-- end .skill -->
+      </div><!-- end .skills -->
+
+      <div class="grid-col-sm-2 no-padding">
+        &nbsp;
+      </div>
+
+      <!-- UX SKILLS -->
+      <div class="grid-col-sm-5 skills no-padding">
+        <h3 class="subsection-title"><i class="icon icon-user"></i> UX design skills</h3>                  
+
+        <div class="grid-row skill" ng-repeat="skill in uxskills">
+          <div class="grid-col-md-4 grid-col-sm-5">
+            <br ng-show="$first"><span class="type" ng-bind="skill.type"></span>
+          </div>                    
+          <div class="grid-col-md-8 grid-col-sm-7">
+            <div class="range-labels" ng-show="$first">
+              <span class="beginner">beginner</span>
+              <span class="advanced">advanced</span>
+            </div>
+            <div class="range">
+              <div class="level" style="width:{{ skill.level }}%">&nbsp;</div>
+            </div>                      
+          </div>
+        </div><!-- end .skill -->
+      </div><!-- end .skills -->
+    </div><!-- end .grid-row -->
+
+    <!-- EDUCATION -->    
+    <div class="grid-row education">
+      <h3 class="subsection-title"><i class="icon icon-graduation-cap"></i> education</h3>
+      <div class="grid-col-sm-4" ng-repeat="history in education">            
+        <div class="history">
+          <span class="degree" ng-bind="history.degree"></span>
+
+          <br><span class="location" ng-bind="history.location"></span>
+          <br><span class="school" ng-bind="history.school"></span>
+          <br>Graduated: <span class="date" ng-bind="history.date"></span>
+        </div>
+      </div>        
+    </div><!-- end .grid-row -->
+
+    <div class="grid-row description">
+      <div class="grid-col-xs-12">
+        <p>Design is my passion. I began as a freelance graphic designer who dabbled in web development and grew to love designing interactive media. My experience has taught me self-discipline, time management, teamwork, problem solving skills, and more importantly, empathy for other people.<p>
+        <p>I've learned that good design isn't just about making something look awesome. It's more about helping people accomplish their goals by making their tasks easier, faster, and more enjoyable. I'm proud to be part of a creative community that focuses on user-centered design to ensure that innovative technology and digital media never forgets the human element.</p>          
+        <p><span class="bold">Specialties:</span> Responsive web design (RWD), user interface (UI) design, user experience (UX) design</p>
+      </div>
+    </div>
+  </div>
+</div><!-- end .about -->
