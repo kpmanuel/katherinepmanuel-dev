@@ -31,11 +31,12 @@
     visibility:hidden;
     cursor:pointer;
     font-size:3em;
-    color:#24A9A7;
+    /*color:#24A9A7;*/
+    color:#FF8A00;
 }
 
 .slick-slider-container .arrow:hover {
-    color:#FF8A00;
+    color:#24A9A7;
 }
 
 @media screen and (min-width:768px)
