@@ -1,15 +1,44 @@
 <div class="main-container">
-  <!-- BANNER -->
-  <div class="banner">
+  <!-- OVERVIEW -->
+  <div class="overview">
     <div class="container">
+      <a role="button" class="back-button" href="/"><i class="icon icon-left"></i>Back</a>
+      
       <div class="grid-row">
-        <div class="grid-col-md-4">
-          <h2 class="project-title"><span>Coming Soon</span></h2>
+        <div class="grid-col-sm-6">            
+          <h1 class="project-title" ng-bind="projects[projectId].name"></h1>
+          <p ng-bind="projects[projectId].description"></p>
+          <div class="project-links">
+              <a ng-show="projects[projectId].gallery && !projects[projectId].website && !projects[projectId].video" ng-click="openGalleryModal(projectId)" class="button button-primary">View Gallery</a>
+              <a ng-show="projects[projectId].website" ng-href="{{ projects[projectId].website }}" target="_blank" class="button button-primary">View Site</a>
+              <a ng-show="projects[projectId].video" class="button button-primary" ng-click="openVideoModal(projectId)">Watch Demo</a>
+              <a ng-show="projects[projectId].report" class="button button-primary" ng-href="{{ projects[projectId].report }}" target="_blank">Read Research</a>
+            </div> 
+          <h2>My Role</h2>
+          <ul ng-repeat="role in roles">
+            <li ng-bind="role"></li>
+          </ul>            
         </div>
-        <div class="grid-col-md-8">
-          <!-- image here -->
+        <div class="grid-col-sm-6">
+          <img ng-src="{{projects[projectId].gallery[0].url}}" alt="{{projects[projectId].name}}" class="img-responsive">
+          <p class="copyright">&copy; <span ng-bind="projects[projectId].copyright"></span></p>
         </div>
-      </div><!-- end .grid-row --> 
+      </div><!-- end .grid-row -->
     </div><!-- end .container -->
-  </div><!-- end .banner -->
+  </div><!-- end .overview -->
+  
+  <!-- PROCESS -->
+  <div class="process">
+    <div class="container">
+      <app-safe2drive ng-if="safe2drive"></app-safe2drive>
+      <app-daida ng-if="daida"></app-daida>
+      <app-socialq ng-if="socialq"></app-socialq>  
+      <app-clip ng-if="clip"></app-clip>  
+      <app-minnetrista ng-if="minnetrista"></app-minnetrista>  
+      <app-fineryears ng-if="fineryears"></app-fineryears>  
+      <app-algpi ng-if="algpi"></app-algpi>
+      <app-kentuckykingdom ng-if="kentuckykingdom"></app-kentuckykingdom>
+    </div><!-- end .container -->
+  </div><!-- end .process -->    
+  
 </div><!-- end .main-container -->

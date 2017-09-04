@@ -15,7 +15,15 @@ angular.module('app', [
   'app.footer',
   'app.contact',
   'app.quote',
-  'app.scrollToElement'
+  'app.scrollToElement',
+  'app.safe2drive',
+  'app.daida',
+  'app.socialq',
+  'app.clip',
+  'app.minnetrista',
+  'app.fineryears',
+  'app.algpi',
+  'app.kentuckykingdom'
 ])
 
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$qProvider', function($stateProvider, $urlRouterProvider, $locationProvider, $qProvider) {
@@ -31,7 +39,7 @@ angular.module('app', [
       controller: 'AboutCtrl'
     })
     .state('project', {
-      url: '/project',
+      url: '/project/:id',
       templateUrl: 'app/project/project.html',
       controller: 'ProjectCtrl'
     })
@@ -43,6 +51,7 @@ angular.module('app', [
   
   $urlRouterProvider
     .when('', '/')
+    .when('/project', '/')
   
   //Remove the hash-bang (#!) from the URL (e.g. http://kpm.indystardev.com/angularjs/#!/projects)
   //Default to hash (#)
@@ -50,5 +59,12 @@ angular.module('app', [
   
   //Bug fix
   $qProvider.errorOnUnhandledRejections(false);
-}]);
+}])
+
+//Debug purposes only
+.run(['$stateParams', function($stateParams) {
+  window.appDebug = {};
+  window.appDebug.$stateParams = $stateParams;
+}])
+;
 

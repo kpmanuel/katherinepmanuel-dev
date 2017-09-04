@@ -9,12 +9,20 @@ angular.module('app.home', [
   'ProjectsService'
 ])
 
-.controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$window', 'ProjectsService', 'Lightbox',
-                         function($scope, $rootScope, $location, $window, ProjectsService, Lightbox) {
+.controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$state', '$window', 'ProjectsService', 'Lightbox',
+                         function($scope, $rootScope, $location, $state, $window, ProjectsService, Lightbox) {
+  //scroll to top by default
   $window.scrollTo(0, 0);
+  
+  //debug purposes only
+  $window.appDebug.HomeCtrl = $scope;
                            
   //get page
   $rootScope.page = $location.path();
+              
+  //get state
+  $rootScope.state = $state.current;
+  //console.log($rootScope.state.name);
   
   //get projects
   $scope.projects = [];

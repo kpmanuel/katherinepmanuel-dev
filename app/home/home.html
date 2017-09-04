@@ -1,22 +1,26 @@
 <div class="main-container">
   <div id="projects" class="projects">       
     <div class="container">            
-      <h1 class="page-title invisible">Projects</h1>
+      <h1 class="page-title">Projects</h1>
       
       <!-- SLICK -->
       <div class="slick-slider-container">
         <slick data="projects" init-onload="true" autoplay="true" autoplay-speed="5000" speed="1000" fade="true" dots="true" prev-arrow=".arrow-left" next-arrow=".arrow-right" infinite="true">
           <div class="project" ng-repeat="project in projects">            
-            <img class="img-responsive display" ng-src="{{ project.display }}">
+            <a ng-href="/#/project/{{ project.id }}"><img class="img-responsive display" ng-src="{{ project.display }}" alt="{{ project.name }}"></a>
             <h2 class="project-name" ng-bind="project.name"></h2>
             <p class="project-role">
               <strong>My Role: </strong><span ng-bind="project.role"></span>
             </p>
             <div class="project-links">
+              <a ng-href="/#/project/{{ project.id }}" class="button button-primary">View Details</a>
+              
+              <!--
               <a ng-show="project.gallery && !project.website && !project.video" ng-click="openGalleryModal($index)" class="button button-primary">View Gallery</a>
               <a ng-show="project.website" ng-href="{{ project.website }}" target="_blank" class="button button-primary">View Site</a>
               <a ng-show="project.video" class="button button-primary" ng-click="openVideoModal($index)">Watch Demo</a>
               <a ng-show="project.report" class="button button-primary" ng-href="{{ project.report }}" target="_blank">Read Research</a>
+              -->
             </div>         
           </div><!-- end .project -->
         </slick><!-- end slick -->

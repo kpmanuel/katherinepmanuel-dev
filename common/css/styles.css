@@ -11,6 +11,20 @@ body {
 	color:#333;
 }
 
+a.back-button:active,
+a.back-button:link,
+a.back-button:visited {
+	color:#FF8100;
+	padding:10px;
+	text-decoration:none !important;
+	border-radius:5px;
+	border:1px solid #FFF;
+}
+
+a.back-button:hover {
+	border:1px solid;
+}
+
 .container {
   margin-left:auto;
   margin-right:auto;
@@ -49,9 +63,7 @@ h1, h2, h3, .h1, .h2, .h3 {
 
 h1 {
 	font-size:2rem;
-	color:#24a9a7;
-	text-transform:uppercase;
-	
+	color:#333;	
 }
 
 h2 {
@@ -62,9 +74,9 @@ h2 {
 
 h3 {
 	font-size:1.25rem;
-	color:#888888;
+	font-weight:bold;
+	color:#333333;
 }
-
 
 .button {  
   -webkit-transition:all 0.4s;
@@ -104,6 +116,10 @@ h3 {
 	{
   	width:160px;
 	}
+}
+
+header a {
+	border:none !important;
 }
 
 header.desktop {
@@ -250,10 +266,10 @@ ul.menu {
 }
 
 .projects {
-  padding:0em 0 3em 0;
+  padding:2em 0 3em 0;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:576px) {
 	.projects {
 		background:url('../img/projects-bg.jpg') no-repeat center center;
   	background-size:cover;
@@ -265,17 +281,26 @@ ul.menu {
   text-align:center;
 }
 
+.projects .project img.display {
+	max-width:90%;
+	margin:auto;
+}
+
+.projects .page-title {
+	text-align:center;
+	text-transform:uppercase;
+	/*font-family: 'Architects Daughter', cursive;*/
+}
+
 .about {
   /*background-color:#E9E9E9;*/
-	padding:3em 0 3em 0;
+	padding:2em 0;
 }
 
 .about .page-title {
 	text-align:center;
-}
-
-.skill .type {
 	text-transform:uppercase;
+	font-family: 'Architects Daughter', cursive;
 }
 
 .skill .range {
@@ -474,6 +499,38 @@ ul.menu {
 	right:0;
 }
 
+.overview {
+	padding:3em 0em;
+}
+
+.overview img {
+	border:1px solid #CCC;
+	width:auto;
+	max-height: 800px;
+	margin:0;
+}
+
+@media screen and (min-width:576px) 
+{
+	.overview img {
+		margin:auto;
+	}
+}
+
+.overview .copyright {
+	color:#999;
+	font-size:0.875rem;
+	margin-top:20px;
+	text-align:left;
+}
+
+@media screen and (min-width:576px)
+{
+	.overview .copyright {
+		text-align:center;
+	}
+}
+
 footer {
   background-color:#24A9A7;
 	padding:2.25em 0;
@@ -504,5 +561,17 @@ footer .copyright {
 /***** Project Page *****/
 
 .project-title {
-	
+	text-transform:uppercase;
+	/*font-family: 'Architects Daughter', cursive;*/
+}
+
+.process {
+	padding:3em 0;
+	background-color:#d8e5e5;
+}
+
+.process img {
+	max-width:640px;
+	margin:auto;
+	border:1px solid #ccc;
 }

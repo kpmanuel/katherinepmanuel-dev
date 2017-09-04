@@ -7,9 +7,17 @@
     "type" : "Photoshop",
     "level" : "90"
   },
-    {
-    "type" : "InVision",
-    "level" : "50"
+  {
+    "type" : "Illustrator",
+    "level" : "80"
+  },
+  {
+    "type" : "InDesign",
+    "level" : "40"
+  },
+  {
+    "type" : "Axure RP",
+    "level" : "60"
   },
   {
     "type" : "HTML5",

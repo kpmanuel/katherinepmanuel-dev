@@ -115,12 +115,6 @@
       "src": "modernpics"
     },
     {
-      "uid": "e160a7e42e4e818463fd5a8607b9f608",
-      "css": "down-circle",
-      "code": 59534,
-      "src": "websymbols"
-    },
-    {
       "uid": "18e30ad120ce4b15d7e5c797e4bf0ee8",
       "css": "hand-pointer-o",
       "code": 62042,
@@ -131,6 +125,30 @@
       "css": "user",
       "code": 59466,
       "src": "entypo"
+    },
+    {
+      "uid": "3838a5aba604532d2dbae5904615ea39",
+      "css": "down",
+      "code": 59404,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "1d35198f5190ec004dd4ec742fbe19ca",
+      "css": "right",
+      "code": 59405,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "040e72500c863813088c9f9c9415f8e9",
+      "css": "up",
+      "code": 59406,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "c21d309f797d3644dc8d28c4617738ce",
+      "css": "left",
+      "code": 59407,
+      "src": "mfglabs"
     }
   ]
 }

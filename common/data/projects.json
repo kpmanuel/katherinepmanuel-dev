@@ -1,111 +1,27 @@
 [
   {
     "id" : "0",
-    "name" : "The Finer Years",
-    "role" : "Requirements gathering, interface mockups, HTML, CSS, browser tests",
-    "display" : "common/img/fineryears/fineryears-display.png",
+    "code" : "safe2drive",
+    "name" : "Safe2Drive Driver Education",
+    "description" : "A proposed design for Safe2Drive's Next Generation Driver Eduation program",
+    "role" : "User research, Wireframes, Interface mockups, Cognitive walkthroughs",
+    "display" : "common/img/safe2drive/safe2drive-display.png",
     "gallery" : [
                   {
-                    "url" : "common/img/fineryears/desktop-home.jpg"
+                    "url" : "common/img/safe2drive/desktop-home.jpg"
                   },
                   {
-                    "url" : "common/img/fineryears/tablet-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/fineryears/mobile-home.jpg"
-                  }
+                    "url" : "common/img/safe2drive/mobile-home.jpg"
+                  }                 
                 ],
-    "website" : "http://www.fineryears.com"
+    "copyright" : "2014 Safe2Drive"
   },
   {
     "id" : "1",
-    "name" : "Indiana Sports Awards",
-    "role" : "Requirements gathering, interface mockups, HTML, CSS, browser tests",
-    "display" : "common/img/indianasportsawards/indianasportsawards-display.png",
-    "gallery" : [
-                  {
-                    "url" : "common/img/indianasportsawards/desktop-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/indianasportsawards/tablet-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/indianasportsawards/mobile-home.jpg"
-                  }
-                ],
-    "website" : "http://digital.indystar.com/indianasportsawards"    
-  },
-  {
-    "id" : "2",
-    "name" : "Bookshelf",
-    "role" : "Requirements gathering, interface mockups, HTML, CSS, browser tests",
-    "display" : "common/img/bookshelf/bookshelf-display.png",
-    "gallery" : [
-                  {
-                    "url" : "common/img/bookshelf/desktop-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/bookshelf/tablet-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/bookshelf/mobile-home.jpg"
-                  }
-                ],
-    "website" : "http://digital.indystar.com/bookshelf"    
-  },
-  {
-    "id" : "3",
-    "name" : "Marian University",
-    "role" : "Requirements gathering, HTML, CSS, browser tests",
-    "display" : "common/img/marianuniversity/marianuniversity-display.png",
-    "gallery" : [
-                  {
-                    "url" : "common/img/marianuniversity/desktop-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/marianuniversity/tablet-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/marianuniversity/mobile-home.jpg"
-                  }
-                ],
-    "website" : "http://digital.indystar.com/marianuniversity/campus"    
-  },
-  {
-    "id" : "4",
-    "name" : "Kentucky Kingdom",
-    "role" : "Requirements gathering, interface mockups, HTML, CSS, browser tests",
-    "display" : "common/img/kentuckykingdom/kentuckykingdom-display.png",
-    "gallery" : [
-                  {
-                    "url" : "common/img/kentuckykingdom/desktop-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/kentuckykingdom/tablet-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/kentuckykingdom/mobile-home.jpg"
-                  }
-                ]
-  },
-  {
-    "id" : "5",
-    "name" : "Minnetrista",
-    "role" : "Requirements gathering, wireframes, interface mockups",
-    "display" : "common/img/minnetrista/minnetrista-display.png",
-    "gallery" : [
-                  {
-                    "url" : "common/img/minnetrista/desktop-home.jpg"
-                  },
-                  {
-                    "url" : "common/img/minnetrista/mobile-home.jpg"
-                  }
-                ]
-  },
-  {
-    "id" : "6",
+    "code" : "daida",
     "name" : "Daida",
-    "role" : "User research, wireframes, interface mockups, cognitive walkthroughs, interactive prototypes, usability tests",
+    "description" : "A daily distress (extreme anxiety) awareness mobile application",
+    "role" : "User research, Wireframes, Interface mockups, Cognitive walkthroughs, Interactive prototypes, Usability tests",
     "display" : "common/img/daida/daida-display.png",
     "gallery" : [
                   {
@@ -124,12 +40,15 @@
                   "url" : "https://www.youtube.com/embed/xo4yFbEnhjM?rel=0&showinfo=0"
                 }
               ],
-    "report" : "common/docs/daida/daida.pdf"
+    "report" : "common/docs/daida/daida.pdf",
+    "copyright" : "2014"
   },
   {
-    "id" : "7",
+    "id" : "2",
+    "code" : "socialq",
     "name" : "SocialQ",
-    "role" : "Wireframes, paper prototypes, internal walkthroughs, interface mockups, interactive prototypes, usability tests",
+    "description" : "A mobile application that is aimed at better informing users about their social network. It is not meant to replace any existing social media applications. Rather, it is a supplemental tool to support the user's goal of keeping up with their social network.  (Co-designed by Christina Dunbar)",
+    "role" : "Wireframes, Paper prototypes, Internal walkthroughs, Interface mockups, Interactive prototypes, Usability tests",
     "display" : "common/img/socialq/socialq-display.png",
     "gallery" : [
                   {
@@ -142,6 +61,106 @@
                     "url" : "common/img/socialq/mobile-stats.jpg"
                   }                  
                 ],
-    "report" : "common/docs/socialq/socialq.pdf"
+    "report" : "common/docs/socialq/socialq.pdf",
+    "copyright" : "2012"
+  },
+  {
+    "id" : "3",
+    "code" : "clip",
+    "name" : "Catalog Reader and Library Pathfinder (CLiP)",
+    "description" : "A mobile application that provides a seamless transition from searching for books on the catalog to physically locating books in the library. (Co-creator: Debaleena Chattopadhyay)",
+    "role" : "Field research, Wireframes, Interface mockups, Internal evaluation, Interactive prototypes, Usability tests",
+    "display" : "common/img/clip/clip-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/clip/mobile-home.png"
+                  },
+                  {
+                    "url" : "common/img/clip/mobile-booklist.png"
+                  },
+                  {
+                    "url" : "common/img/clip/mobile-map.png"
+                  }                  
+                ],
+    "report" : "common/docs/clip/clip.pdf",
+    "copyright" : "2012"
+  },
+  {
+    "id" : "4",
+    "code" : "minnetrista",
+    "name" : "Minnetrista",
+    "description" : "A website re-design for a museum and recreational center",
+    "role" : "Wireframes, Interface mockups",
+    "display" : "common/img/minnetrista/minnetrista-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/minnetrista/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/minnetrista/mobile-home.jpg"
+                  }
+                ],
+    "copyright" : "2017 Indy Star Media / Minnetrista"
+  },
+  {
+    "id" : "5",
+    "code" : "fineryears",
+    "name" : "The Finer Years",
+    "description" : "IndyStar's guide to retirement living and elderly care",
+    "role" : "Interface mockups, HTML5, CSS3, Browser tests",
+    "display" : "common/img/fineryears/fineryears-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/fineryears/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/tablet-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/mobile-home.jpg"
+                  }
+                ],
+    "website" : "http://www.fineryears.com",
+    "copyright" : "2016 Indy Star Media"
+  },
+  {
+    "id" : "6",
+    "code" : "algpi",
+    "name" : "Angie's List Grand Prix of Indianapolis",
+    "description" : "A contest landing page to promote the VIP Grand Prize package for the Grand Prix of Indianapolis",
+    "role" : "Interface mockups, HTML5, CSS3, Browser tests",
+    "display" : "common/img/algpi/algpi-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/algpi/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/algpi/tablet-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/algpi/mobile-home.jpg"
+                  }
+                ],
+    "copyright" : "2016 Indy Star Media"
+  },
+  {
+    "id" : "7",
+    "code" : "kentuckykingdom",
+    "name" : "Kentucky Kingdom",
+    "description" : "A promotion landing page for the Kentucky Kingdom 2-Day Fun Pass",
+    "role" : "Interface mockups, HTML5, CSS3, Browser tests",
+    "display" : "common/img/kentuckykingdom/kentuckykingdom-display.png",
+    "gallery" : [
+                  {
+                    "url" : "common/img/kentuckykingdom/desktop-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/kentuckykingdom/tablet-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/kentuckykingdom/mobile-home.jpg"
+                  }
+                ],
+    "copyright" : "2015 Indy Star Media"
   }
 ]

@@ -6,12 +6,20 @@ angular.module('app.about', [
   'EducationService'
 ])
 
-.controller('AboutCtrl', ['$scope', '$rootScope', '$location', '$window', 'UISkillsService', 'UXSkillsService', 'EducationService', 'Lightbox',
-                          function($scope, $rootScope, $location, $window, UISkillsService, UXSkillsService, EducationService, Lightbox) {
+.controller('AboutCtrl', ['$scope', '$rootScope', '$location', '$state', '$window', 'UISkillsService', 'UXSkillsService', 'EducationService', 'Lightbox',
+                          function($scope, $rootScope, $location, $state, $window, UISkillsService, UXSkillsService, EducationService, Lightbox) {
+  //scroll to top by default
   $window.scrollTo(0, 0);
+                            
+  //debug purposes only
+  $window.appDebug.HomeCtrl = $scope;                          
 
   //get page
   $rootScope.page = $location.path();
+                            
+  //get state
+  $rootScope.state = $state.current;
+  //console.log($rootScope.state.name);
   
   //get ui skills
   $scope.uiskills = [];
