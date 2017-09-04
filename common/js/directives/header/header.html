@@ -2,7 +2,7 @@
 <header class="mobile">
   <div class="container">
     <div class="branding">
-      <a href="/" role="button" class="brand">
+      <a ui-sref="home" role="button" class="brand">
         <span class="name">Katherine P. Manuel</span>    
         <span class="slogan">web/ui/ux designer</span>  
       </a>
@@ -10,8 +10,8 @@
     <div class="nav-container">
       <nav role="navigation" hl-sticky="">
         <ul class="menu">
-          <li><a href="/" role="button" ng-class="{ 'current' : state.name == 'home' || state.name == 'default' }">projects</a></li>
-          <li><a href="/#/about" role="button" ng-class="{ 'current' : state.name == 'about' }">about</a></li>
+          <li><a ui-sref="home" role="button" ng-class="{ 'current' : state.name == 'home' || state.name == 'default' }">projects</a></li>
+          <li><a ui-sref="about" role="button" ng-class="{ 'current' : state.name == 'about' }">about</a></li>
         </ul>
         
         <!--
@@ -31,7 +31,7 @@
   <div class="container">
     <div class="grid-row">
       <div class="grid-col-md-6 grid-col-sm-6 branding">
-        <a href="/" role="button" class="brand">
+        <a ui-sref="home" role="button" class="brand">
           <span class="name">Katherine P. Manuel</span>    
           <span class="slogan">web/ui/ux designer</span>
         </a>
@@ -39,8 +39,8 @@
       <div class="grid-col-md-6 grid-col-sm-6 nav-container no-padding">              
         <nav role="navigation">
           <ul class="menu">
-            <li><a href="/" role="button" ng-class="{ 'current' : state.name == 'home' || state.name == 'default' }">projects</a></li>
-            <li><a href="#/about" role="button" ng-class="{ 'current' : state.name == 'about' }">about</a></li>
+            <li><a ui-sref="home" role="button" ng-class="{ 'current' : state.name == 'home' || state.name == 'default' }">projects</a></li>
+            <li><a ui-sref="about" role="button" ng-class="{ 'current' : state.name == 'about' }">about</a></li>
           </ul>
           
           <!--

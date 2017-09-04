@@ -50,8 +50,7 @@ angular.module('app', [
     })
   
   $urlRouterProvider
-    .when('', '/')
-    .when('/project', '/')
+    .when('', '/home')
   
   //Remove the hash-bang (#!) from the URL (e.g. http://kpm.indystardev.com/angularjs/#!/projects)
   //Default to hash (#)
