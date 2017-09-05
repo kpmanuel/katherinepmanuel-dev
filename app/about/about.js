@@ -12,7 +12,7 @@ angular.module('app.about', [
   $window.scrollTo(0, 0);
                             
   //debug purposes only
-  $window.appDebug.HomeCtrl = $scope;                          
+  $window.appDebug.AboutCtrl = $scope;                          
 
   //get page
   $rootScope.page = $location.path();
