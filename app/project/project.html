@@ -12,7 +12,7 @@
               <a ng-show="projects[projectId].gallery && !projects[projectId].website && !projects[projectId].video" ng-click="openGalleryModal(projectId)" class="button button-primary">View Gallery</a>
               <a ng-show="projects[projectId].website" ng-href="{{ projects[projectId].website }}" target="_blank" class="button button-primary">View Site</a>
               <a ng-show="projects[projectId].video" class="button button-primary" ng-click="openVideoModal(projectId)">Watch Demo</a>
-              <a ng-show="projects[projectId].report" class="button button-primary" ng-href="{{ projects[projectId].report }}" target="_blank">Read Research</a>
+              <a ng-show="projects[projectId].report" class="button button-primary" ng-href="{{ projects[projectId].report }}" target="_blank">Read Report</a>
             </div> 
           <h2>My Role</h2>
           <ul ng-repeat="role in roles">
@@ -38,6 +38,8 @@
       <app-fineryears ng-if="fineryears"></app-fineryears>  
       <app-algpi ng-if="algpi"></app-algpi>
       <app-kentuckykingdom ng-if="kentuckykingdom"></app-kentuckykingdom>
+      
+      <a ng-show="projects[projectId].report" class="button button-primary" ng-href="{{ projects[projectId].report }}" target="_blank">Read Full Report</a>
     </div><!-- end .container -->
   </div><!-- end .process -->    
   

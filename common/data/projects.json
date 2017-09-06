@@ -50,7 +50,7 @@
     "id" : "2",
     "code" : "socialq",
     "name" : "SocialQ",
-    "description" : "A mobile application that is aimed at better informing users about their social network. It is not meant to replace any existing social media applications. Rather, it is a supplemental tool to support the user's goal of keeping up with their social network.  (Co-designed by Christina Dunbar)",
+    "description" : "A mobile application that is aimed at better informing users about their social network. (Co-designed by Christina Dunbar)",
     "role" : "Wireframes, Paper prototypes, Internal walkthroughs, Interface mockups, Interactive prototypes, Usability tests",
     "display" : "common/img/socialq/socialq-display.png",
     "gallery" : [
@@ -100,7 +100,19 @@
                     "url" : "common/img/minnetrista/desktop-home.jpg"
                   },
                   {
+                    "url" : "common/img/minnetrista/desktop-about.jpg"
+                  },
+                  {
+                    "url" : "common/img/minnetrista/desktop-volunteer.jpg"
+                  },
+                  {
                     "url" : "common/img/minnetrista/mobile-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/minnetrista/mobile-about.jpg"
+                  },
+                  {
+                    "url" : "common/img/minnetrista/mobile-volunteer.jpg"
                   }
                 ],
     "copyright" : "2017 Indy Star Media / Minnetrista"
@@ -158,10 +170,28 @@
                     "url" : "common/img/kentuckykingdom/desktop-home.jpg"
                   },
                   {
+                    "url" : "common/img/kentuckykingdom/desktop-coupon.jpg"
+                  },
+                  {
+                    "url" : "common/img/kentuckykingdom/desktop-attractions.jpg"
+                  },
+                  {
                     "url" : "common/img/kentuckykingdom/tablet-home.jpg"
                   },
                   {
+                    "url" : "common/img/kentuckykingdom/tablet-coupon.jpg"
+                  },
+                  {
+                    "url" : "common/img/kentuckykingdom/tablet-attractions.jpg"
+                  },
+                  {
                     "url" : "common/img/kentuckykingdom/mobile-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/kentuckykingdom/mobile-coupon.jpg"
+                  },
+                  {
+                    "url" : "common/img/kentuckykingdom/mobile-attractions.jpg"
                   }
                 ],
     "copyright" : "2015 Indy Star Media"
