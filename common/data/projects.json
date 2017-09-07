@@ -129,10 +129,37 @@
                     "url" : "common/img/fineryears/desktop-home.jpg"
                   },
                   {
+                    "url" : "common/img/fineryears/desktop-about.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/desktop-listings.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/desktop-map.jpg"
+                  },
+                  {
                     "url" : "common/img/fineryears/tablet-home.jpg"
                   },
                   {
+                    "url" : "common/img/fineryears/tablet-about.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/tablet-listings.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/tablet-map.jpg"
+                  },
+                  {
                     "url" : "common/img/fineryears/mobile-home.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/mobile-about.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/mobile-listings.jpg"
+                  },
+                  {
+                    "url" : "common/img/fineryears/mobile-map.jpg"
                   }
                 ],
     "website" : "http://www.fineryears.com",
