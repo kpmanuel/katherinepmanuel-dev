@@ -7,7 +7,7 @@
     <meta name="keywords" content="UI design,UX design,web design,Balsamiq,Photoshop,InVision,HTML,CSS,Bootstrap,JavaScript,jQuery,user research, wireframes, mockups, interactive prototypes, usabilty tests, documentation">
     <meta name="author" content="Katherine P. Manuel">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web/UI/UX Designer - Katherine P. Manuel</title>
+    <title ng-bind="pageTitle"></title>
     
     <!-- stylesheets -->
     <link href="common/css/normalize.min.css" rel="stylesheet">
@@ -54,6 +54,7 @@
       <script src="common/bower_components/angular-touch/angular-touch.min.js"></script>
       <script src="common/bower_components/ng-videosharing-embed/build/ng-videosharing-embed.min.js"></script>
       <script src="common/bower_components/angular-sticky/dist/angular-sticky.min.js"></script>
+      <script src="common/bower_components/angular-google-analytics/dist/angular-google-analytics.js"></script>
   
       <!-- controllers -->
       <script src="app/home/home.js"></script>
@@ -82,17 +83,20 @@
       <script src="common/js/services/UXSkillsService.js"></script>
       
       <!-- Google Analytics tracking code -->
+      <!--
       <script>
         //Detect environment using env.js. GA code will only be used if environment is production.
+       
         if (window.environment == 'production') {
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     
-            ga('create', 'UA-10647992-1', 'auto');
+            ga('create', window.env.var('googleAnalyticsCode'), 'auto');
             ga('send', 'pageview');
         }
       </script>
+      -->
   </body>
 </html>

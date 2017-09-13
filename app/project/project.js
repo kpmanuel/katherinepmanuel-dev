@@ -50,7 +50,10 @@ angular.module('app.project', [
          //set reference to the current array element
          $scope.currentProject = $scope.projects[key];
       }      
-    }   
+    }
+    
+    //call function to update and report page title to google analytics
+    $rootScope.reportPageView($scope.currentProject.name + " - Web/UI/UX Designer - Katherine P. Manuel");
     
     //check if current project id does not exist
     if($scope.currentProject === undefined) {

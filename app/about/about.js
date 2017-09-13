@@ -17,6 +17,9 @@ angular.module('app.about', [
   //get page
   $rootScope.page = $location.path();
                             
+  //call function to update and report page title to google analytics
+  $rootScope.reportPageView("About - Web/UI/UX Designer - Katherine P. Manuel");
+                            
   //get state
   $rootScope.state = $state.current;
   //console.log($rootScope.state.name);

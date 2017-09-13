@@ -10,7 +10,7 @@ window.env = {
       'googleAnalyticsCode': ''
     },
     'production': {
-      'googleAnalyticsCode': ''
+      'googleAnalyticsCode': 'UA-10647992-1'
     }
   },
   

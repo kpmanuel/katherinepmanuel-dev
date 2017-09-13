@@ -9,8 +9,8 @@ angular.module('app.home', [
   'ProjectsService'
 ])
 
-.controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$state', '$window', 'ProjectsService', 'Lightbox',
-                         function($scope, $rootScope, $location, $state, $window, ProjectsService, Lightbox) {
+.controller('HomeCtrl', ['$scope', '$rootScope', '$location', '$state', '$window', 'ProjectsService', 'Lightbox', 'Analytics',
+                         function($scope, $rootScope, $location, $state, $window, ProjectsService, Lightbox, Analytics) {
   //scroll to top by default
   $window.scrollTo(0, 0);
   
@@ -19,6 +19,9 @@ angular.module('app.home', [
                            
   //get page
   $rootScope.page = $location.path();
+
+  //call function to update and report page title to google analytics
+  $rootScope.reportPageView("Home - Web/UI/UX Designer - Katherine P. Manuel");
               
   //get state
   $rootScope.state = $state.current;
