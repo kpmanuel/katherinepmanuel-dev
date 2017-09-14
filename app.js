@@ -96,9 +96,9 @@ angular.module('app', [
   $rootScope.Analytics = Analytics;
   $rootScope.pageTitle = "Web/UI/UX Designer - Katherine P. Manuel";
   
-  //function to report page view to google analytics
+  //report page view to google analytics
   $rootScope.reportPageView = function(pageTitle) {
-    //check if pageTitle parameter has a value; if yes, then set page title to that value
+    //check if pageTitle parameter has a value; if yes, then set pageTitle to that value
     if(pageTitle !== undefined) {
       $rootScope.pageTitle = pageTitle;
     }    
@@ -106,10 +106,10 @@ angular.module('app', [
     //set a delay before reporting to google analytics to avoid race conditions
     $timeout(function() {
       //report to google analytics.  sample code is: Analytics.trackPage(path URL, page title)
-      //console.log('tracking: window.location.href: ', window.location.href);
+      //console.log('tracking: window.location.hash: ', window.location.hash);
       //console.log('tracking: $rootScope.pageTitle: ', $rootScope.pageTitle);
       Analytics.trackPage(
-        window.location.href,
+        window.location.hash,
         $rootScope.pageTitle   
       );
     }, 2000);    
